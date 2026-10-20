@@ -268,8 +268,3 @@ li + li { margin-top: var(--space-1); }
 .more-cases a:hover { border-color: var(--accent); }
 .mc-kind { display: block; font-size: var(--step--1); color: var(--muted); }
 .mc-name { display: block; font-weight: 600; margin-top: var(--space-1); }
-
-.caps .role-need { display: block; font-weight: 400; color: var(--muted); font-size: var(--step--1); margin-top: var(--space-1); }
-.caps td ul { margin: 0; }
-.entries .entry h3 a { color: var(--ink); text-decoration: none; }
-.entries .entry h3 a:hover { text-decoration: underline; }
