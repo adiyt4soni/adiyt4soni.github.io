@@ -1,0 +1,196 @@
+<!doctype html>
+<html lang="en-GB">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Aditya Soni</title>
+<meta name="description" content="Aditya (Adi) Soni designs AI workflows, directs Claude Code and Codex to build them, and tests what they produce. Case studies, an archive and a skills library, with evidence.">
+<link rel="canonical" href="https://adiyt4soni.github.io/">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Aditya Soni">
+<meta property="og:description" content="Aditya (Adi) Soni designs AI workflows, directs Claude Code and Codex to build them, and tests what they produce. Case studies, an archive and a skills library, with evidence.">
+<meta property="og:url" content="https://adiyt4soni.github.io/">
+<meta name="twitter:card" content="summary">
+<meta name="color-scheme" content="light dark">
+<link rel="icon" href="static/favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="static/site.css">
+
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<header class="site-header">
+  <div class="wrap header-inner">
+    <a class="brand" href="./">Aditya (Adi) Soni</a>
+    <nav aria-label="Main"><ul><li><a href="#work">Work</a></li><li><a href="archive/">Archive</a></li><li><a href="skills/">Skills</a></li><li><a href="how-i-work/">How I work</a></li><li><a href="about/">About</a></li></ul></nav>
+  </div>
+</header>
+<main id="main" tabindex="-1">
+
+<section class="hero wrap">
+  <p class="eyebrow">Aditya (Adi) Soni · London</p>
+  <h1>I turn messy, manual work into AI systems with written rules and tests.</h1>
+  <div class="hero-text"><p>I write the rules a system must follow, direct Claude Code and Codex to build and check it, and decide what's ready to rely on. AI wrote most of the code in the projects below. The specifications, the scope calls and the decisions are mine.</p>
+<p>Before this, five years in operations, finance and growth at 64Facets, a fine-jewellery business, including a CRM migration largely automated with AI. Economics and Accounting graduate (UC Santa Barbara, 2026), based in London, looking for AI business analyst, adoption and operations roles.</p></div>
+  <p class="hero-actions">
+    <a class="btn" href="#work">See the work</a>
+    <a class="btn btn-quiet" href="about/#contact">Contact</a>
+  </p>
+</section>
+
+<section id="work" class="wrap section" aria-labelledby="work-h">
+  <div class="section-head">
+    <h2 id="work-h">Selected work</h2>
+    <p class="muted">Four projects with the strongest evidence. Status labels say what works today.</p>
+  </div>
+  
+<article class="feature">
+  <div class="feature-text">
+    <p class="eyebrow">Agent workflow <span class="chip chip-status" data-status="LIVE">In use</span></p>
+    <h3><a href="work/job-search-system/">Job-search operations system</a></h3>
+    <p class="lede">A system I designed and run with Claude Code to handle my own job search: it watches about 415 company job boards, screens roles against rules I wrote, builds and tests a tailored CV for each, and refuses to submit anything that fails its checks.</p>
+    <ul class="proof"><li>One sweep on 20 Oct 2026: 25,037 postings in, 4 sent on for an AI to read in full. Everything else was filtered by written rules</li><li>After a separate-session audit showed the rules lived only in prompts, I had them rebuilt as code with 150 automated tests</li><li>A pre-submit gate refuses duplicates, below-bar roles and banned content, and freezes the exact files sent</li></ul>
+    <p class="role"><strong>My part:</strong> I wrote the rules, asked for the audit, decided what changed, and nothing is submitted until I say 'apply'. Claude Code wrote the tools; Codex wrote and reviewed some of the prompts.</p>
+    <p><a class="more" href="work/job-search-system/">Read the case study<span class="vh"> on Job-search operations system</span> →</a></p>
+  </div>
+  <div class="feature-media"><figure class="fig"><svg viewBox="0 0 480 560" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="dj-t dj-d" style="max-width:520px;margin:0 auto">
+  <title id="dj-t">Job-search system: how a role moves through it</title>
+  <desc id="dj-d">Six stages in order: discover roles from company job boards; screen them with written rules and then an AI score; build a tailored CV and letter; test the CV for parsing, coverage and honesty; a pre-submit gate checks duplicates and banned content and freezes the files; I approve before anything is submitted. Approval points are marked.</desc>
+  <defs><marker id="dj-a" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path class="dg-arrow" d="M0 0L10 5L0 10z"/></marker></defs>
+  <g>
+    <rect class="dg-box" x="10" y="10" width="330" height="66" rx="6"/>
+    <text class="dg-text" x="26" y="38" style="font-size:17px">1  Discover</text>
+    <text class="dg-sub" x="26" y="60" style="font-size:14px">Company job boards and searches</text>
+
+    <rect class="dg-box" x="10" y="100" width="330" height="66" rx="6"/>
+    <text class="dg-text" x="26" y="128" style="font-size:17px">2  Screen</text>
+    <text class="dg-sub" x="26" y="150" style="font-size:14px">Written rules first, then an AI score</text>
+
+    <rect class="dg-box" x="10" y="190" width="330" height="66" rx="6"/>
+    <text class="dg-text" x="26" y="218" style="font-size:17px">3  Build</text>
+    <text class="dg-sub" x="26" y="240" style="font-size:14px">Tailored CV and letter from a fact bank</text>
+
+    <rect class="dg-box" x="10" y="280" width="330" height="66" rx="6"/>
+    <text class="dg-text" x="26" y="308" style="font-size:17px">4  Test</text>
+    <text class="dg-sub" x="26" y="330" style="font-size:14px">Parsing, coverage and honesty checks</text>
+
+    <rect class="dg-gate" x="10" y="370" width="330" height="66" rx="6"/>
+    <text class="dg-text" x="26" y="398" style="font-size:17px">5  Pre-submit gate</text>
+    <text class="dg-sub" x="26" y="420" style="font-size:14px">Duplicates, banned content, file hashes</text>
+
+    <rect class="dg-box-accent" x="10" y="460" width="330" height="66" rx="6"/>
+    <text class="dg-text" x="26" y="488" style="font-size:17px">6  Submit</text>
+    <text class="dg-sub" x="26" y="510" style="font-size:14px">Only when I say so</text>
+
+    <path class="dg-line" d="M175 76V98" marker-end="url(#dj-a)"/><path class="dg-line" d="M175 166V188" marker-end="url(#dj-a)"/>
+    <path class="dg-line" d="M175 256V278" marker-end="url(#dj-a)"/><path class="dg-line" d="M175 346V368" marker-end="url(#dj-a)"/>
+    <path class="dg-line" d="M175 436V458" marker-end="url(#dj-a)"/>
+
+    <text class="dg-human" x="356" y="139" style="font-size:13px">RULES I WROTE</text>
+    <text class="dg-human" x="356" y="409" style="font-size:13px">STOPS ON FAIL</text>
+    <text class="dg-human" x="356" y="499" style="font-size:13px">MY APPROVAL</text>
+  </g>
+</svg>
+<figcaption>How a role moves through the system. The dashed stage stops the run if any check fails; submission waits for my 'apply'.</figcaption></figure></div>
+</article>
+<article class="feature">
+  <div class="feature-text">
+    <p class="eyebrow">Research system <span class="chip chip-status" data-status="WORKING_LOCAL">Working locally</span></p>
+    <h3><a href="work/argus/">Argus 2.0</a></h3>
+    <p class="lede">A research tool for testing whether an investment idea beats doing nothing, built to catch false positives. Rules and pass marks are written down before any test, the data tool refuses to let a test see information from after the decision date, and rejections are logged as results. Simulated trading only: no real money, and no code that can place an order.</p>
+    <ul class="proof"><li>Rebuilding the stock universe point-in-time turned an earlier +168% backtest into +34.5%, against +108% for simply holding the index</li><li>7 rules rejected on pre-written criteria, and the first rule not promoted</li><li>The save command refuses an AI-written company note that contains a number or date not in the stored data</li></ul>
+    <p class="role"><strong>My part:</strong> I set the objective and the bar, decided what to test and when to stop, and chose between fixes when problems surfaced. Claude Code built the engine and ran the tests; Codex wrote the build specification.</p>
+    <p><a class="more" href="work/argus/">Read the case study<span class="vh"> on Argus 2.0</span> →</a></p>
+  </div>
+  <div class="feature-media"><figure class="fig"><svg viewBox="0 0 480 470" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="ar-t ar-d" style="max-width:520px;margin:0 auto">
+  <title id="ar-t">How Argus 2.0 tests a trading rule</title>
+  <desc id="ar-d">Write the rule and its pass criteria into a contract before testing. Run it on point-in-time data that refuses future information. Score it next to buy-and-hold, equal weight and cash, plus controls such as shuffled signals and coin-flip traders. Record a verdict, including rejections, in a trial log with a fixed budget. Survivors move to forward paper trading only; no real orders.</desc>
+  <defs><marker id="ar-a" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path class="dg-arrow" d="M0 0L10 5L0 10z"/></marker></defs>
+  <rect class="dg-box" x="10" y="10" width="330" height="66" rx="6"/><text class="dg-text" x="26" y="38" style="font-size:17px">1  Contract first</text><text class="dg-sub" x="26" y="60" style="font-size:14px">Rule and pass criteria, written before</text>
+  <rect class="dg-box" x="10" y="100" width="330" height="66" rx="6"/><text class="dg-text" x="26" y="128" style="font-size:17px">2  Point-in-time data</text><text class="dg-sub" x="26" y="150" style="font-size:14px">Future data refused by the code</text>
+  <rect class="dg-box" x="10" y="190" width="330" height="66" rx="6"/><text class="dg-text" x="26" y="218" style="font-size:17px">3  Baselines and controls</text><text class="dg-sub" x="26" y="240" style="font-size:14px">Buy-and-hold, shuffles, coin flips</text>
+  <rect class="dg-gate" x="10" y="280" width="330" height="66" rx="6"/><text class="dg-text" x="26" y="308" style="font-size:17px">4  Verdict logged</text><text class="dg-sub" x="26" y="330" style="font-size:14px">Rejections kept; 30-trial budget</text>
+  <rect class="dg-box-accent" x="10" y="370" width="330" height="66" rx="6"/><text class="dg-text" x="26" y="398" style="font-size:17px">5  Forward paper trading</text><text class="dg-sub" x="26" y="420" style="font-size:14px">Simulated accounts, no real orders</text>
+  <path class="dg-line" d="M175 76V98" marker-end="url(#ar-a)"/><path class="dg-line" d="M175 166V188" marker-end="url(#ar-a)"/><path class="dg-line" d="M175 256V278" marker-end="url(#ar-a)"/><path class="dg-line" d="M175 346V368" marker-end="url(#ar-a)"/>
+  <text class="dg-human" x="356" y="43" style="font-size:13px">BEFORE ANY</text><text class="dg-human" x="356" y="59" style="font-size:13px">RESULT</text>
+  <text class="dg-human" x="356" y="313" style="font-size:13px">7 REJECTED</text>
+</svg>
+<figcaption>How Argus tests a rule. Nothing moves to paper trading without passing step 4, and nothing trades real money.</figcaption></figure></div>
+</article>
+<article class="feature">
+  <div class="feature-text">
+    <p class="eyebrow">Local AI assistant <span class="chip chip-status" data-status="IN_TESTING">In testing</span></p>
+    <h3><a href="work/vex/">Vex</a></h3>
+    <p class="lede">A personal assistant that runs on an open-weight model on my own laptop. What it may do is decided in code, not in its prompt, so it can't send, delete or read restricted files without my approval. From 13 to 19 October every change Claude Code wrote was reviewed by Codex before I decided whether it merged.</p>
+    <ul class="proof"><li>Codex flagged problems in 71 of 94 completed reviews in one week, counting re-reviews of fixes</li><li>The first review found that Claude's permission tests passed even with the permission gate switched off</li><li>A model comparison with pass marks written down beforehand ended with 'no model passes both gates; no switch'</li></ul>
+    <p class="role"><strong>My part:</strong> I own the charter and the safety rules, set what gets built first, accept or veto risk, and decide every merge. Claude Code wrote nearly all the code; Codex wrote an independent first version and runs the reviews.</p>
+    <p><a class="more" href="work/vex/">Read the case study<span class="vh"> on Vex</span> →</a></p>
+  </div>
+  <div class="feature-media"><figure class="fig"><svg viewBox="0 0 480 560" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="rv-t rv-d" style="max-width:520px;margin:0 auto">
+  <title id="rv-t">The Claude and Codex review loop on Vex</title>
+  <desc id="rv-d">Claude Code writes the change on a branch and pins the commit with a written review request. Codex reviews it read-only and tries to break it. A script records the review and checks Codex's own session file. Each finding becomes a failing test, then a fix, then a narrower re-review of the new commit. I decide whether it merges.</desc>
+  <defs><marker id="rv-a" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path class="dg-arrow" d="M0 0L10 5L0 10z"/></marker></defs>
+  <rect class="dg-box" x="10" y="10" width="330" height="66" rx="6"/><text class="dg-text" x="26" y="38" style="font-size:17px">1  Claude Code writes</text><text class="dg-sub" x="26" y="60" style="font-size:14px">Change on a branch, commit pinned</text>
+  <rect class="dg-box" x="10" y="100" width="330" height="66" rx="6"/><text class="dg-text" x="26" y="128" style="font-size:17px">2  Codex attacks it</text><text class="dg-sub" x="26" y="150" style="font-size:14px">Read-only, briefed to break claims</text>
+  <rect class="dg-gate" x="10" y="190" width="330" height="66" rx="6"/><text class="dg-text" x="26" y="218" style="font-size:17px">3  Record is checked</text><text class="dg-sub" x="26" y="240" style="font-size:14px">Script verifies Codex's own session</text>
+  <rect class="dg-box" x="10" y="280" width="330" height="66" rx="6"/><text class="dg-text" x="26" y="308" style="font-size:17px">4  Failing test first</text><text class="dg-sub" x="26" y="330" style="font-size:14px">Each finding reproduced, then fixed</text>
+  <rect class="dg-box" x="10" y="370" width="330" height="66" rx="6"/><text class="dg-text" x="26" y="398" style="font-size:17px">5  Narrower re-review</text><text class="dg-sub" x="26" y="420" style="font-size:14px">Pinned to the new commit</text>
+  <rect class="dg-box-accent" x="10" y="460" width="330" height="66" rx="6"/><text class="dg-text" x="26" y="488" style="font-size:17px">6  Merge or not</text><text class="dg-sub" x="26" y="510" style="font-size:14px">Nothing merges without my yes</text>
+  <path class="dg-line" d="M175 76V98" marker-end="url(#rv-a)"/><path class="dg-line" d="M175 166V188" marker-end="url(#rv-a)"/><path class="dg-line" d="M175 256V278" marker-end="url(#rv-a)"/><path class="dg-line" d="M175 346V368" marker-end="url(#rv-a)"/><path class="dg-line" d="M175 436V458" marker-end="url(#rv-a)"/>
+  <path class="dg-line" d="M340 403 H 362 V 133 H 344" marker-end="url(#rv-a)"/>
+  <text class="dg-human" x="372" y="262" style="font-size:12px">REPEAT</text><text class="dg-human" x="372" y="278" style="font-size:12px">UNTIL</text><text class="dg-human" x="372" y="294" style="font-size:12px">CLEAN</text>
+  <text class="dg-human" x="356" y="499" style="font-size:13px">MY CALL</text>
+</svg>
+<figcaption>The review loop used on Vex changes from 13 to 19 Oct; from 20 Oct I switched to one review campaign at the end of the build. Codex can read but never edit.</figcaption></figure></div>
+</article>
+<article class="feature">
+  <div class="feature-text">
+    <p class="eyebrow">Personal data analytics <span class="chip chip-status" data-status="WORKING_LOCAL">Working locally</span></p>
+    <h3><a href="work/tau/">Tau</a></h3>
+    <p class="lede">A personal analytics app over my WHOOP wearable data. A scheduled pull feeds a rebuild that is checked by 21 validation tests, and the analysis only reports patterns that hold up after a check for chance. The screenshot shows my real dashboard; medical details are kept off this site.</p>
+    <ul class="proof"><li>Checking real data against a frozen reference caught a unit bug and a 12.5-hour timezone error that a synthetic test had missed</li><li>0 of 25 tested habits held up after a check for chance, and the app says so instead of offering tips</li><li>The forecast is graded against a naive baseline and labels its own confidence</li></ul>
+    <p class="role"><strong>My part:</strong> I set the rules (no medical advice, nothing leaves the folder, check the output not the code), made the product calls and pushed back on the interface. Claude Code wrote and rebuilt the code and found both data bugs.</p>
+    <p><a class="more" href="work/tau/">Read the case study<span class="vh"> on Tau</span> →</a></p>
+  </div>
+  <div class="feature-media"><figure class="fig"><img src="static/img/tau-dashboard.jpg" alt="Tau dashboard in dark mode: a greeting, two reminder cards about training and weight logging, a daily streak panel, and three rings for recovery (68%), strain (11.2) and sleep (82%) with their sub-metrics." width="800" height="552" loading="lazy"><figcaption>My real Tau dashboard, 20 Oct 2026, captured from the local app. Two reminder cards with medical details were hidden before the capture; nothing else was edited.</figcaption></figure></div>
+</article>
+</section>
+
+<section class="wrap section" aria-labelledby="method-h">
+  <div class="section-head">
+    <h2 id="method-h">How I work with AI</h2>
+    <p class="muted">The same loop runs through every project. <a href="how-i-work/">Examples for each step →</a></p>
+  </div>
+  <ol class="method"><li><span class="step-name">Define the problem</span><span class="step-text">Write down what the system must do and what it must never do, before any code.</span></li><li><span class="step-name">Set constraints</span><span class="step-text">Privacy, cost and approval rules go into code where they can be tested, not into a prompt.</span></li><li><span class="step-name">Choose tools</span><span class="step-text">Pick the model, library or existing skill that fits, and record why.</span></li><li><span class="step-name">Delegate</span><span class="step-text">Hand a written specification to Claude Code; keep each task small enough to review.</span></li><li><span class="step-name">Review</span><span class="step-text">A second model (Codex) reviews the change read-only; I decide which findings to act on.</span></li><li><span class="step-name">Test against evidence</span><span class="step-text">Pre-registered checks, baselines and spot-checks against the source data.</span></li><li><span class="step-name">Correct</span><span class="step-text">When a check fails, fix the cause and add a check so it can't recur.</span></li><li><span class="step-name">Accept or stop</span><span class="step-text">Ship what passed; report nulls and stop what didn't earn its place.</span></li></ol>
+</section>
+
+<section class="wrap section" aria-labelledby="caps-h">
+  <div class="section-head">
+    <h2 id="caps-h">What I can bring to a team</h2>
+    <p class="muted">Each line points to where the work shows it.</p>
+  </div>
+  <table class="caps"><tbody><tr><th scope="row">Requirements discovery</th><td>Written rulebooks and contracts before any build: the <a href="work/job-search-system/#approach">job-search rules</a>, Argus's <a href="work/argus/#approach">strategy contract</a>, the Vex charter.</td></tr><tr><th scope="row">Workflow design</th><td>A rules-first <a href="work/job-search-system/#what">screening funnel</a> and a <a href="work/tau/#what">daily data pipeline</a> with validation built in.</td></tr><tr><th scope="row">Tool and model selection</th><td>A pre-registered <a href="work/vex/#checked">local-model bake-off</a>; third-party <a href="skills/">skills reused with credit</a>.</td></tr><tr><th scope="row">Evaluation and QA</th><td>Baselines and controls in <a href="work/argus/#checked">Argus</a>, a 21-check harness in <a href="work/tau/#checked">Tau</a>, a <a href="work/job-search-system/#decision">separate-session audit</a> of my own system.</td></tr><tr><th scope="row">AI safety and privacy controls</th><td><a href="work/vex/#approach">Permissions in code</a> with injection tests, and a <a href="archive/">privacy leak found and closed</a> in a cross-model setup.</td></tr><tr><th scope="row">Operational reliability</th><td><a href="skills/#automations">Scheduled automations</a> with run records, pre-submit gates and hash-verified records.</td></tr><tr><th scope="row">Communicating limits</th><td>Every case study ends with what doesn't work, and the <a href="archive/">archive</a> keeps stopped work.</td></tr></tbody></table>
+</section>
+
+<section class="wrap section split" aria-label="More work">
+  <div class="panel">
+    <h2>Archive</h2>
+    <p>26 entries, including experiments and stopped work, each with its status and date.</p>
+    <p><a class="more" href="archive/">Browse the archive →</a></p>
+  </div>
+  <div class="panel">
+    <h2>Skills and automations</h2>
+    <p>24 of my own workflows published on GitHub as skills and scheduled tasks, plus 6 third-party skills kept with credit. Each shows its origin and whether it has actually run.</p>
+    <p><a class="more" href="skills/">Open the library →</a></p>
+  </div>
+</section>
+
+</main>
+<footer class="site-footer">
+  <div class="wrap footer-inner">
+    <p><a href="mailto:adityasoni2002@gmail.com">adityasoni2002@gmail.com</a> · <a href="https://www.linkedin.com/in/adity4-soni" rel="me noopener">linkedin.com/in/adity4-soni</a> · <a href="https://github.com/adiyt4soni" rel="me noopener">github.com/adiyt4soni</a></p>
+    <p class="muted">Built with Claude Code and Codex from verified project records. Static site, no tracking. Last updated 2026-10-20.</p>
+  </div>
+</footer>
+
+</body>
+</html>

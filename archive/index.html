@@ -1,0 +1,155 @@
+<!doctype html>
+<html lang="en-GB">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Archive · Aditya Soni</title>
+<meta name="description" content="Every public AI project, experiment and stopped piece of work, with dates and status.">
+<link rel="canonical" href="https://adiyt4soni.github.io/archive/">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Archive · Aditya Soni">
+<meta property="og:description" content="Every public AI project, experiment and stopped piece of work, with dates and status.">
+<meta property="og:url" content="https://adiyt4soni.github.io/archive/">
+<meta name="twitter:card" content="summary">
+<meta name="color-scheme" content="light dark">
+<link rel="icon" href="../static/favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="../static/site.css">
+
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<header class="site-header">
+  <div class="wrap header-inner">
+    <a class="brand" href="../">Aditya (Adi) Soni</a>
+    <nav aria-label="Main"><ul><li><a href="../#work">Work</a></li><li><a href="../archive/" aria-current="page">Archive</a></li><li><a href="../skills/">Skills</a></li><li><a href="../how-i-work/">How I work</a></li><li><a href="../about/">About</a></li></ul></nav>
+  </div>
+</header>
+<main id="main" tabindex="-1">
+
+<section class="wrap section">
+  <h1>Archive</h1>
+  <p class="lede">Everything public in one list, including experiments, rebuilds and work I stopped. Search and filters need JavaScript; without it you see the full list.</p>
+  <form class="filters" role="search" aria-label="Filter the archive" data-enhance hidden>
+    <div class="field"><label for="q">Search</label><input id="q" type="search" autocomplete="off" placeholder="e.g. evaluation, Codex, WHOOP"></div>
+    <div class="field"><label for="cat">Category</label><select id="cat"><option value="">All</option><option value="Agent workflow">Agent workflow</option><option value="Automation">Automation</option><option value="Data analytics">Data analytics</option><option value="Evaluation">Evaluation</option><option value="Integration">Integration</option><option value="Knowledge workflow">Knowledge workflow</option><option value="Learning">Learning</option><option value="Local AI">Local AI</option><option value="Multi-model">Multi-model</option><option value="Personal assistant">Personal assistant</option><option value="Research method">Research method</option><option value="Research system">Research system</option><option value="Skills">Skills</option><option value="Workplace AI">Workplace AI</option></select></div>
+    <div class="field"><label for="st">Status</label><select id="st"><option value="">All</option><option value="LIVE">In use</option><option value="WORKING_LOCAL">Working locally</option><option value="IN_TESTING">In testing</option><option value="PROTOTYPE">Prototype</option><option value="ARCHIVED">Archived</option><option value="DISCONTINUED">Stopped</option></select></div>
+    <div class="field field-reset"><button type="reset">Reset</button></div>
+  </form>
+  <p class="count muted" aria-live="polite" data-count>26 entries</p>
+  <ol class="entries" data-list><li class="entry" data-category="Agent workflow" data-status="LIVE">
+  <p class="entry-meta"><time datetime="2026-10-20">May to Oct 2026</time> · Agent workflow <span class="chip chip-status" data-status="LIVE">In use</span></p>
+  <h2>Job-search operations system</h2>
+  <p>Rules-first screening of about 415 job boards, tested CV builds and a pre-submit gate, rebuilt after a separate-session audit. <a href="../work/job-search-system/">Case study</a></p>
+</li><li class="entry" data-category="Agent workflow" data-status="LIVE">
+  <p class="entry-meta"><time datetime="2026-10-20">Oct 2026</time> · Agent workflow <span class="chip chip-status" data-status="LIVE">In use</span></p>
+  <h2>Automated LinkedIn networking</h2>
+  <p>Fully automated outreach: it chooses who to contact at a company and the best route in, writes a note in my voice, checks it with a script for length, reading level and banned phrases, sends it by itself, and tracks replies. About 400 contacts so far.</p>
+</li><li class="entry" data-category="Data analytics" data-status="WORKING_LOCAL">
+  <p class="entry-meta"><time datetime="2026-10-20">Aug to Oct 2026</time> · Data analytics <span class="chip chip-status" data-status="WORKING_LOCAL">Working locally</span></p>
+  <h2>Tau</h2>
+  <p>Personal wearable analytics with a 21-check validation harness, corrected statistics and a baseline-graded forecast. <a href="../work/tau/">Case study</a></p>
+</li><li class="entry" data-category="Automation" data-status="LIVE">
+  <p class="entry-meta"><time datetime="2026-10-20">Sep to Oct 2026</time> · Automation <span class="chip chip-status" data-status="LIVE">In use</span></p>
+  <h2>Scheduled automation fleet</h2>
+  <p>19 scheduled tasks across job search, Argus and Tau; 184 recorded runs by 20 Oct, with every failure so far a usage-limit stop. Configured and ran are tracked separately. <a href="../skills/#automations">Run evidence</a></p>
+</li><li class="entry" data-category="Research system" data-status="WORKING_LOCAL">
+  <p class="entry-meta"><time datetime="2026-10-20">Sep to Oct 2026</time> · Research system <span class="chip chip-status" data-status="WORKING_LOCAL">Working locally</span></p>
+  <h2>Argus 2.0</h2>
+  <p>Paper-trading research with pre-written test contracts, point-in-time data, baselines and logged rejections. <a href="../work/argus/">Case study</a></p>
+</li><li class="entry" data-category="Automation" data-status="IN_TESTING">
+  <p class="entry-meta"><time datetime="2026-10-20">Sep 2026 to now</time> · Automation <span class="chip chip-status" data-status="IN_TESTING">In testing</span></p>
+  <h2>Argus paper-trading fleet</h2>
+  <p>20 candidate rules run forward in 29 simulated accounts (the rest are controls), each with a double-cost twin, against 200 coin-flip traders per group. Every decision is hash-chained. No result is claimed before the December review.</p>
+</li><li class="entry" data-category="Personal assistant" data-status="IN_TESTING">
+  <p class="entry-meta"><time datetime="2026-10-20">Sep 2026 to now</time> · Personal assistant <span class="chip chip-status" data-status="IN_TESTING">In testing</span></p>
+  <h2>Vex</h2>
+  <p>Local-model assistant with permissions enforced in code and every change reviewed by a second model. <a href="../work/vex/">Case study</a></p>
+</li><li class="entry" data-category="Multi-model" data-status="LIVE">
+  <p class="entry-meta"><time datetime="2026-10-19">Sep to Oct 2026</time> · Multi-model <span class="chip chip-status" data-status="LIVE">In use</span></p>
+  <h2>Claude and Codex review loop</h2>
+  <p>Codex reviewed Claude Code's changes read-only against pinned commits, and a script verifies each review's own session record. 129 review records from 13 to 19 Oct, 94 completed; since 20 Oct reviews run as one campaign at the end of the build. <a href="../work/vex/#checked">How it works</a></p>
+</li><li class="entry" data-category="Personal assistant" data-status="IN_TESTING">
+  <p class="entry-meta"><time datetime="2026-10-19">Oct 2026</time> · Personal assistant <span class="chip chip-status" data-status="IN_TESTING">In testing</span></p>
+  <h2>Vex voice</h2>
+  <p>On-device speech recognition and local text-to-speech in a sandboxed process. Cloud speech recognition was ruled out. Built; Codex reviews found the default voice and the menu-bar app not yet mergeable, so it isn't merged.</p>
+</li><li class="entry" data-category="Integration" data-status="WORKING_LOCAL">
+  <p class="entry-meta"><time datetime="2026-10-18">Oct 2026</time> · Integration <span class="chip chip-status" data-status="WORKING_LOCAL">Working locally</span></p>
+  <h2>Tau read-only tool server</h2>
+  <p>Ten read-only tools that let an AI assistant query Tau's data through the Model Context Protocol. Built and tested locally; not yet shown connected to a live client.</p>
+</li><li class="entry" data-category="Skills" data-status="LIVE">
+  <p class="entry-meta"><time datetime="2026-10-18">Oct 2026</time> · Skills <span class="chip chip-status" data-status="LIVE">In use</span></p>
+  <h2>Published skills library</h2>
+  <p>24 of my own workflows published as GitHub repos, plus 6 third-party skills kept with credit. <a href="../skills/">Library</a></p>
+</li><li class="entry" data-category="Multi-model" data-status="LIVE">
+  <p class="entry-meta"><time datetime="2026-10-18">Jul to Oct 2026</time> · Multi-model <span class="chip chip-status" data-status="LIVE">In use</span></p>
+  <h2>Cross-model handoff packets</h2>
+  <p>Self-contained packets that let Codex, ChatGPT or Gemini pick up a task cold: research handoffs, mock-interview partners, reviews. Codex wrote several master prompts that Claude then ran. <a href="https://github.com/adiyt4soni/cross-model-handoff">Skill on GitHub</a></p>
+</li><li class="entry" data-category="Agent workflow" data-status="ARCHIVED">
+  <p class="entry-meta"><time datetime="2026-10-15">Oct 2026</time> · Agent workflow <span class="chip chip-status" data-status="ARCHIVED">Archived</span></p>
+  <h2>London rental search</h2>
+  <p>49 Python tools: listing capture, TfL commute times, public police-crime and census data by area, and AI reviewer agents that scored listing photos against a written rubric (about 930 reviews covering about 7,500 photos). Stopped once a room was booked. The photo scores were never checked against human ratings.</p>
+</li><li class="entry" data-category="Learning" data-status="PROTOTYPE">
+  <p class="entry-meta"><time datetime="2026-10-15">Oct 2026</time> · Learning <span class="chip chip-status" data-status="PROTOTYPE">Prototype</span></p>
+  <h2>AI learning plan from my own usage</h2>
+  <p>An audit of 132 of my own sessions produced an 18-lesson curriculum and baseline measures to re-test against. One lesson started so far.</p>
+</li><li class="entry" data-category="Multi-model" data-status="ARCHIVED">
+  <p class="entry-meta"><time datetime="2026-10-14">Oct 2026</time> · Multi-model <span class="chip chip-status" data-status="ARCHIVED">Archived</span></p>
+  <h2>Closing a privacy leak in the review setup</h2>
+  <p>Found that a second model's memory feature had imported earlier transcripts with restricted details. The import was switched off, memory is now forced off per review with a pre-flight check, and evaluations may only use tools that touch no personal data.</p>
+</li><li class="entry" data-category="Evaluation" data-status="ARCHIVED">
+  <p class="entry-meta"><time datetime="2026-10-13">Oct 2026</time> · Evaluation <span class="chip chip-status" data-status="ARCHIVED">Archived</span></p>
+  <h2>Local model bake-off</h2>
+  <p>Nine pass criteria fixed before results, five configurations, two rounds run forward and reversed, and a no-model baseline. No candidate passed both quality and memory, so the current model stayed. Codex re-computed every verdict from the raw data.</p>
+</li><li class="entry" data-category="Research method" data-status="WORKING_LOCAL">
+  <p class="entry-meta"><time datetime="2026-10-12">Oct 2026</time> · Research method <span class="chip chip-status" data-status="WORKING_LOCAL">Working locally</span></p>
+  <h2>Area comparison from public data</h2>
+  <p>Compares areas on serious crime within 800 m, the 25-34 age share and commute time. It refuses to trust a run unless a known hotspot and a known quiet area separate. Two errors in early runs were caught and re-run: a mistaken station match and all-crime figures quoted as serious crime. <a href="https://github.com/adiyt4soni/uk-area-safety-screen">Skill on GitHub</a></p>
+</li><li class="entry" data-category="Evaluation" data-status="ARCHIVED">
+  <p class="entry-meta"><time datetime="2026-10-11">Oct 2026</time> · Evaluation <span class="chip chip-status" data-status="ARCHIVED">Archived</span></p>
+  <h2>Separate-session audit of the job-search system</h2>
+  <p>Asked for an audit on a frozen copy of the data, run by a fresh Claude Code session with blind AI judges, a rules-only baseline, repeat-scoring stability tests and regression tests. A same-model-family review, not an external one. Verdict: not safe to run unattended, which drove the rebuild. <a href="../work/job-search-system/#decision">Read the findings</a></p>
+</li><li class="entry" data-category="Knowledge workflow" data-status="ARCHIVED">
+  <p class="entry-meta"><time datetime="2026-10-11">Oct 2026</time> · Knowledge workflow <span class="chip chip-status" data-status="ARCHIVED">Archived</span></p>
+  <h2>Context map (&#x27;brain&#x27;)</h2>
+  <p>A generated 3D map of my AI rules, project logs and memory notes. I wanted it to cut the tokens spent re-reading context. Claude said it would be a viewer, not a token saver, and the README says exactly that.</p>
+</li><li class="entry" data-category="Workplace AI" data-status="ARCHIVED">
+  <p class="entry-meta"><time datetime="2026-09-30">2026</time> · Workplace AI <span class="chip chip-status" data-status="ARCHIVED">Archived</span></p>
+  <h2>CRM migration automation at 64Facets</h2>
+  <p>I flagged early that re-entering about 900 pieces into a new CRM by hand would take months, and weighed a local model against the cloud for privacy and cost. A substantial portion of the entry work was then automated: Claude and Codex helped build it, and a locally run 70-billion-parameter open-weight model (llama.cpp) did most of the entry so sensitive data stayed off the cloud. I spot-checked early output by hand before trusting it, and checked results against the old system. I also introduced AI-assisted steps to colleagues one process at a time, and stopped a tool I found reading sensitive information. This is my account: no files from this work are held on the laptop this portfolio was built from, so it isn't shown as verified evidence.</p>
+</li><li class="entry" data-category="Local AI" data-status="ARCHIVED">
+  <p class="entry-meta"><time datetime="2026-09-15">Aug to Sep 2026</time> · Local AI <span class="chip chip-status" data-status="ARCHIVED">Archived</span></p>
+  <h2>Local speech-to-text</h2>
+  <p>Transcribed private recordings on my own Mac with open-source Whisper models so audio never left the machine. Moved from CPU to the Apple GPU (MLX, large-v3-turbo). No accuracy metric was measured.</p>
+</li><li class="entry" data-category="Local AI" data-status="WORKING_LOCAL">
+  <p class="entry-meta"><time datetime="2026-09-03">Sep 2026</time> · Local AI <span class="chip chip-status" data-status="WORKING_LOCAL">Working locally</span></p>
+  <h2>Local model setup</h2>
+  <p>Chose an open-weight 20B model (gpt-oss) that fits a 24 GB laptop, served through Ollama. Checked and dropped an idea that turned out impossible: running Claude itself locally.</p>
+</li><li class="entry" data-category="Knowledge workflow" data-status="ARCHIVED">
+  <p class="entry-meta"><time datetime="2026-09-02">Sep 2026</time> · Knowledge workflow <span class="chip chip-status" data-status="ARCHIVED">Archived</span></p>
+  <h2>Rebuilding my AI working rules after a laptop loss</h2>
+  <p>After a migration lost my AI configuration, ten agents mined the surviving files for rules I'd used; 237 distinct candidates were adjudicated into a new instruction file, each kept rule corroborated by at least two sources, the rest marked uncertain. Codex ran the same task in parallel.</p>
+</li><li class="entry" data-category="Automation" data-status="ARCHIVED">
+  <p class="entry-meta"><time datetime="2026-08-23">Aug 2026</time> · Automation <span class="chip chip-status" data-status="ARCHIVED">Archived</span></p>
+  <h2>File organisation run</h2>
+  <p>AI-run organisation of Downloads, Desktop and Documents (400 moves): a written plan, a move-only rule, a manifest logged before every move, checksum checks and undo scripts. Zero deletions.</p>
+</li><li class="entry" data-category="Research system" data-status="DISCONTINUED">
+  <p class="entry-meta"><time datetime="2026-07-23">mid-2026</time> · Research system <span class="chip chip-status" data-status="DISCONTINUED">Stopped</span></p>
+  <h2>Argus (first version)</h2>
+  <p>Pre-registered tests with a bar adjusted for how many ideas were tried. 0 of 20 tradeable candidates cleared it (a separate set of quality features passed a weaker ranking test), so return prediction was closed rather than loosened; the volatility model that beat its baseline was kept. The local copy was lost in a laptop migration; a reduced private snapshot survives.</p>
+</li><li class="entry" data-category="Personal assistant" data-status="DISCONTINUED">
+  <p class="entry-meta"><time datetime="2026-07-09">Jul to Aug 2026</time> · Personal assistant <span class="chip chip-status" data-status="DISCONTINUED">Stopped</span></p>
+  <h2>VexOS (first assistant setup)</h2>
+  <p>An earlier Claude-based assistant setup with a daily brief and weekly review. Lost with the old laptop; only log entries survive. Its successor is Vex.</p>
+</li></ol>
+  <p class="empty" data-empty hidden>Nothing matches. <button type="button" data-clear>Clear the filters</button></p>
+</section>
+</main>
+<footer class="site-footer">
+  <div class="wrap footer-inner">
+    <p><a href="mailto:adityasoni2002@gmail.com">adityasoni2002@gmail.com</a> · <a href="https://www.linkedin.com/in/adity4-soni" rel="me noopener">linkedin.com/in/adity4-soni</a> · <a href="https://github.com/adiyt4soni" rel="me noopener">github.com/adiyt4soni</a></p>
+    <p class="muted">Built with Claude Code and Codex from verified project records. Static site, no tracking. Last updated 2026-10-20.</p>
+  </div>
+</footer>
+<script src="../static/filter.js" defer></script>
+</body>
+</html>

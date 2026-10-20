@@ -1,0 +1,118 @@
+<!doctype html>
+<html lang="en-GB">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Job-search operations system · Aditya Soni</title>
+<meta name="description" content="Case study: a job-search agent system with written screening rules, a separate-session audit, code-enforced controls and 150 automated tests.">
+<link rel="canonical" href="https://adiyt4soni.github.io/work/job-search-system/">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Job-search operations system · Aditya Soni">
+<meta property="og:description" content="Case study: a job-search agent system with written screening rules, a separate-session audit, code-enforced controls and 150 automated tests.">
+<meta property="og:url" content="https://adiyt4soni.github.io/work/job-search-system/">
+<meta name="twitter:card" content="summary">
+<meta name="color-scheme" content="light dark">
+<link rel="icon" href="../../static/favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="../../static/site.css">
+
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<header class="site-header">
+  <div class="wrap header-inner">
+    <a class="brand" href="../../">Aditya (Adi) Soni</a>
+    <nav aria-label="Main"><ul><li><a href="../../#work">Work</a></li><li><a href="../../archive/">Archive</a></li><li><a href="../../skills/">Skills</a></li><li><a href="../../how-i-work/">How I work</a></li><li><a href="../../about/">About</a></li></ul></nav>
+  </div>
+</header>
+<main id="main" tabindex="-1">
+
+<article class="wrap cs">
+  <header class="cs-head">
+    <p class="eyebrow"><a href="../../#work">Selected work</a> / Agent workflow</p>
+    <h1>Job-search operations system</h1>
+    <p class="lede">A system I designed and run with Claude Code to handle my own job search: it watches about 415 company job boards, screens roles against rules I wrote, builds and tests a tailored CV for each, and refuses to submit anything that fails its checks.</p>
+    <dl class="facts"><div><dt>My role</dt><dd>Rules, specifications, review, approvals</dd></div><div><dt>Built with</dt><dd>Claude Code, Codex, Python</dd></div><div><dt>Period</dt><dd>Sep to Oct 2026 (a simpler version ran from May)</dd></div><div><dt>Status</dt><dd>In daily use, on my laptop</dd></div></dl>
+  </header>
+  <figure class="fig"><svg viewBox="0 0 480 560" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="dj-t dj-d" style="max-width:520px;margin:0 auto">
+  <title id="dj-t">Job-search system: how a role moves through it</title>
+  <desc id="dj-d">Six stages in order: discover roles from company job boards; screen them with written rules and then an AI score; build a tailored CV and letter; test the CV for parsing, coverage and honesty; a pre-submit gate checks duplicates and banned content and freezes the files; I approve before anything is submitted. Approval points are marked.</desc>
+  <defs><marker id="dj-a" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path class="dg-arrow" d="M0 0L10 5L0 10z"/></marker></defs>
+  <g>
+    <rect class="dg-box" x="10" y="10" width="330" height="66" rx="6"/>
+    <text class="dg-text" x="26" y="38" style="font-size:17px">1  Discover</text>
+    <text class="dg-sub" x="26" y="60" style="font-size:14px">Company job boards and searches</text>
+
+    <rect class="dg-box" x="10" y="100" width="330" height="66" rx="6"/>
+    <text class="dg-text" x="26" y="128" style="font-size:17px">2  Screen</text>
+    <text class="dg-sub" x="26" y="150" style="font-size:14px">Written rules first, then an AI score</text>
+
+    <rect class="dg-box" x="10" y="190" width="330" height="66" rx="6"/>
+    <text class="dg-text" x="26" y="218" style="font-size:17px">3  Build</text>
+    <text class="dg-sub" x="26" y="240" style="font-size:14px">Tailored CV and letter from a fact bank</text>
+
+    <rect class="dg-box" x="10" y="280" width="330" height="66" rx="6"/>
+    <text class="dg-text" x="26" y="308" style="font-size:17px">4  Test</text>
+    <text class="dg-sub" x="26" y="330" style="font-size:14px">Parsing, coverage and honesty checks</text>
+
+    <rect class="dg-gate" x="10" y="370" width="330" height="66" rx="6"/>
+    <text class="dg-text" x="26" y="398" style="font-size:17px">5  Pre-submit gate</text>
+    <text class="dg-sub" x="26" y="420" style="font-size:14px">Duplicates, banned content, file hashes</text>
+
+    <rect class="dg-box-accent" x="10" y="460" width="330" height="66" rx="6"/>
+    <text class="dg-text" x="26" y="488" style="font-size:17px">6  Submit</text>
+    <text class="dg-sub" x="26" y="510" style="font-size:14px">Only when I say so</text>
+
+    <path class="dg-line" d="M175 76V98" marker-end="url(#dj-a)"/><path class="dg-line" d="M175 166V188" marker-end="url(#dj-a)"/>
+    <path class="dg-line" d="M175 256V278" marker-end="url(#dj-a)"/><path class="dg-line" d="M175 346V368" marker-end="url(#dj-a)"/>
+    <path class="dg-line" d="M175 436V458" marker-end="url(#dj-a)"/>
+
+    <text class="dg-human" x="356" y="139" style="font-size:13px">RULES I WROTE</text>
+    <text class="dg-human" x="356" y="409" style="font-size:13px">STOPS ON FAIL</text>
+    <text class="dg-human" x="356" y="499" style="font-size:13px">MY APPROVAL</text>
+  </g>
+</svg>
+<figcaption>How a role moves through the system. The dashed stage stops the run if any check fails; submission waits for my 'apply'.</figcaption></figure>
+  <div class="cs-body">
+    <nav class="toc" aria-label="On this page"><p class="toc-h">On this page</p><ol><li><a href="#what">What it does</a></li><li><a href="#why">Why I built it</a></li><li><a href="#role">My role and the AI&#x27;s role</a></li><li><a href="#approach">Approach</a></li><li><a href="#decision">The audit that changed it</a></li><li><a href="#today">What works today</a></li><li><a href="#checked">How it was checked</a></li><li><a href="#limits">Limits</a></li><li><a href="#demo">Safe demonstration</a></li></ol></nav>
+    <div class="prose">
+      <section class="cs-section" id="what"><h2>What it does</h2><p>It runs my job search as a pipeline. It reads the public job boards of about 415 companies (414 resolved in the 20 Oct sweep), filters postings with rules I wrote, and has an AI read the few that survive and fill in a structured assessment with quotes from the ad. Plain code, not the AI, then turns that assessment into a decision, so the same facts always give the same answer.</p>
+<p>For roles that pass, it builds a CV and cover letter from a fact bank of things I have verified about my own experience, tests them, and holds them until I say apply.</p>
+<p>A separate part runs LinkedIn networking on its own: it picks who to contact at each target company, writes the note, checks it against a style script (length, reading level, one clear question, banned phrases) and sends it automatically, then tracks replies. It's tracked about 400 contacts so far.</p><figure class="fig"><svg viewBox="0 0 480 400" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="fn-t fn-d" style="max-width:520px;margin:0 auto">
+  <title id="fn-t">One sweep, 20 October 2026: from 25,037 postings to 4 AI reads</title>
+  <desc id="fn-d">25,037 postings seen across 414 job boards; 3,879 in the UK or possibly UK; 917 with a fitting title; 175 passing the AI-scope rules; 29 not already in the tracker; 4 passed to an AI model to read in full after hard-rule drops.</desc>
+  <g style="font-family:var(--font-sans)">
+    <rect class="dg-box" x="10" y="10" width="460" height="52" rx="6"/>
+    <text class="dg-text" x="24" y="42" style="font-size:16px">25,037 postings seen</text><text class="dg-sub" x="456" y="42" text-anchor="end" style="font-size:13px">414 boards</text>
+    <rect class="dg-box" x="40" y="74" width="400" height="52" rx="6"/>
+    <text class="dg-text" x="54" y="106" style="font-size:16px">3,879 UK or maybe UK</text><text class="dg-sub" x="426" y="106" text-anchor="end" style="font-size:13px">location rule</text>
+    <rect class="dg-box" x="70" y="138" width="340" height="52" rx="6"/>
+    <text class="dg-text" x="84" y="170" style="font-size:16px">917 fitting titles</text><text class="dg-sub" x="396" y="170" text-anchor="end" style="font-size:13px">title rule</text>
+    <rect class="dg-box" x="100" y="202" width="280" height="52" rx="6"/>
+    <text class="dg-text" x="114" y="234" style="font-size:16px">175 in AI scope</text><text class="dg-sub" x="366" y="234" text-anchor="end" style="font-size:13px">scope rule</text>
+    <rect class="dg-box" x="130" y="266" width="220" height="52" rx="6"/>
+    <text class="dg-text" x="144" y="298" style="font-size:16px">29 new</text><text class="dg-sub" x="336" y="298" text-anchor="end" style="font-size:13px">not seen before</text>
+    <rect class="dg-box-accent" x="160" y="330" width="160" height="52" rx="6"/>
+    <text class="dg-text" x="240" y="362" text-anchor="middle" style="font-size:16px">4 read by AI</text>
+  </g>
+</svg>
+<figcaption>One real sweep, 20 October 2026. Counts are from the sweep's own log file.</figcaption></figure></section><section class="cs-section" id="why"><h2>Why I built it</h2><p>I was applying from abroad, at volume, with a fixed AI budget. Doing it by hand meant reading thousands of ads that I was never going to qualify for, and rewriting the same CV over and over. I also needed to stop a tired version of me from sending something careless. The constraints went in first: only real experience on a CV, no AI-written claims I could not back up, and nothing submitted until I say so.</p></section><section class="cs-section" id="role"><h2>My role and the AI&#x27;s role</h2><ul><li><strong>Me:</strong> the goals, the written rulebook (which roles qualify, what counts as a hard no, when to ask me), the fact bank, the choice of checks, asking for the audit, deciding which of its findings to act on, and the instruction to apply.</li><li><strong>Claude Code:</strong> wrote the Python tools, the prompts and the test suite, and does the reading, building and checking.</li><li><strong>Codex:</strong> wrote the CV and cover-letter prompts that were merged into the master prompt, and reviewed the selection prompts.</li></ul>
+<p>I didn't hand-code it. My contribution is the specification, the rules and the decisions; Claude and Codex did most of the building and checking.</p></section><section class="cs-section" id="approach"><h2>Approach</h2><ol><li><strong>Cheap filters first.</strong> Location, title and scope rules run before any AI is used. A sweep that sees zero postings reports an instrument failure instead of 'nothing found'.</li><li><strong>AI reads, code decides.</strong> The model extracts facts with quotes; <code>decide.py</code> applies the tiers (apply, near miss, ask, drop). A score only ranks within a tier; it never decides one.</li><li><strong>Criteria before the CV.</strong> A fresh agent that sees only the job ad writes the checklist, and it is frozen before the CV is written. The agent that writes the CV never writes the criteria.</li><li><strong>Tests, then a gate.</strong> Layout and parsing checks, a blind reader that scores coverage against the frozen checklist, and an honesty check against the fact bank. Then the pre-submit gate.</li><li><strong>Use the right model for each job.</strong> When the cheaper model scored identical CVs far lower than the stronger one, I kept coverage scoring on the stronger model and used the cheap one only for narrow checks.</li></ol></section><section class="cs-section" id="decision"><h2>The audit that changed it</h2><p>In October I asked for an audit of the whole system. A fresh Claude Code session (Claude Opus) ran it on a frozen copy of the data, with five blind Sonnet judges. It's a separate review by the same model family, not an external audit, and it still found real problems:</p>
+<ul><li>The gates I'd written existed only as prompt text. <strong>61 of 98</strong> measured submissions were below the bar in force at the time.</li><li>Scoring the same ad three times moved the score by 5.5 points on average and flipped the decision in 2 of 8 cases.</li><li>23 of 42 regression tests of the old filters failed. For example, 'Chief of Staff' was being dropped and Leeds wasn't recognised as a UK city.</li></ul>
+<p>The audit's verdict was <strong>not safe to run on its own</strong>, and conditionally fine with a human in the loop. So I had the controls rebuilt as code: a pre-submit check, a submission freezer that hashes the exact files sent, a validated state writer and a run log. I also made the score rank within a tier instead of deciding one, because the audit showed it was too noisy to decide.</p></section><section class="cs-section" id="today"><h2>What works today</h2><ul><li><strong>150 of 150</strong> automated tests pass (re-run 20 Oct 2026). They cover the screening rules, the tier logic, the gate's refusals and the state writer.</li><li>Between 11 and 18 Oct the gate logged <strong>37 checks and refused 5</strong>: four where a form field matched the banned-content list, and one for a role below the bar.</li><li><strong>36 of 36</strong> frozen submission records re-verify against their hashes.</li></ul></section><section class="cs-section" id="checked"><h2>How it was checked</h2><p>The audit compared the system's decisions with five AI judges that were blind to the system's scores, used a different rubric and had to quote the ad for every requirement. On the <strong>47 roles</strong> that judges and adjudication called clear-cut, the system's apply-or-ask versus drop decision matched on <strong>45</strong> (35 if 'ask me' is not counted as a match). A regex-only baseline matched <strong>19</strong>. All 822 judge quotes were found word-for-word in the ads.</p>
+<p>The sample of 100 was deliberately skewed towards submitted and gate-dropped roles, so this is not an accuracy rate. It also measures the system <strong>before</strong> the rebuild, excludes the 53 borderline roles, uses judges from the same model family, and says nothing about whether a high score leads to an interview. I treat it as evidence that the screening is roughly right on easy cases.</p></section><section class="cs-section" id="limits"><h2>Limits</h2><ul><li>No outcome measure. There is no evidence yet that the score predicts interviews, and the system makes no claim that it does. A checkpoint is pre-registered for when enough applications have resolved.</li><li>Some CV tests are still procedural rules rather than code, and their run records are partial.</li><li>The honesty checks are AI models reading a fact bank that AI helped write. An AI honesty audit of 84 claims in my evidence notes found 8 stronger than the record, which were reworded. That shows they're needed, not that they're complete.</li><li>It is a personal system on one laptop, not a product.</li></ul></section><section class="cs-section" id="demo"><h2>Safe demonstration</h2><p>Everything on this page uses aggregate counts or invented examples. The real data, CVs and contacts stay private. A synthetic run of the screening rules, using made-up ads from a fictional company, shows how individual sentences trigger a flag:</p>
+<ul><li>'Head of AI Adoption… 8+ years… manage a team' is flagged on years, and the system keeps the sentence that triggered it.</li><li>'Candidates must hold permanent right to work in the UK' is flagged on eligibility.</li><li>'You won't write production code… Strong academics are a plus' raises no flag, because negation and 'a plus' are handled.</li><li>An assessment with every essential met and pay in range comes out as <strong>apply</strong>. Lower the pay below my floor and it becomes <strong>near miss</strong>. Add a technical gap and it becomes <strong>drop</strong>.</li></ul></section>
+      <section class="cs-section" id="credits"><h2>Tools and credits</h2><ul><li>Built with Claude Code (Anthropic) and Codex (OpenAI). Python standard library.</li><li>Job data from the public job-board APIs of Ashby, Greenhouse and Lever.</li><li>CV parse testing uses MuPDF, pypdf and Apple PDFKit.</li></ul></section>
+      <p class="verified muted">Status checked 20 Oct 2026. Counts come from scripts run over the system's own files on that date; the test suite was re-run the same day.</p>
+    </div>
+  </div>
+</article>
+</main>
+<footer class="site-footer">
+  <div class="wrap footer-inner">
+    <p><a href="mailto:adityasoni2002@gmail.com">adityasoni2002@gmail.com</a> · <a href="https://www.linkedin.com/in/adity4-soni" rel="me noopener">linkedin.com/in/adity4-soni</a> · <a href="https://github.com/adiyt4soni" rel="me noopener">github.com/adiyt4soni</a></p>
+    <p class="muted">Built with Claude Code and Codex from verified project records. Static site, no tracking. Last updated 2026-10-20.</p>
+  </div>
+</footer>
+
+</body>
+</html>

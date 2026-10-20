@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="en-GB">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Argus 2.0 · Aditya Soni</title>
+<meta name="description" content="Case study: Argus 2.0, a paper-trading research platform with pre-written test contracts, point-in-time data, baselines and honestly reported rejections.">
+<link rel="canonical" href="https://adiyt4soni.github.io/work/argus/">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Argus 2.0 · Aditya Soni">
+<meta property="og:description" content="Case study: Argus 2.0, a paper-trading research platform with pre-written test contracts, point-in-time data, baselines and honestly reported rejections.">
+<meta property="og:url" content="https://adiyt4soni.github.io/work/argus/">
+<meta name="twitter:card" content="summary">
+<meta name="color-scheme" content="light dark">
+<link rel="icon" href="../../static/favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="../../static/site.css">
+
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<header class="site-header">
+  <div class="wrap header-inner">
+    <a class="brand" href="../../">Aditya (Adi) Soni</a>
+    <nav aria-label="Main"><ul><li><a href="../../#work">Work</a></li><li><a href="../../archive/">Archive</a></li><li><a href="../../skills/">Skills</a></li><li><a href="../../how-i-work/">How I work</a></li><li><a href="../../about/">About</a></li></ul></nav>
+  </div>
+</header>
+<main id="main" tabindex="-1">
+
+<article class="wrap cs">
+  <header class="cs-head">
+    <p class="eyebrow"><a href="../../#work">Selected work</a> / Research system</p>
+    <h1>Argus 2.0</h1>
+    <p class="lede">A research tool for testing whether an investment idea beats doing nothing, built to catch false positives. Rules and pass marks are written down before any test, the data tool refuses to let a test see information from after the decision date, and rejections are logged as results. Simulated trading only: no real money, and no code that can place an order.</p>
+    <dl class="facts"><div><dt>My role</dt><dd>Objective, test design, stop and fix decisions</dd></div><div><dt>Built with</dt><dd>Claude Code, Codex, Python standard library</dd></div><div><dt>Period</dt><dd>Sep 2026 to now (first version mid-2026)</dd></div><div><dt>Status</dt><dd>Working locally; paper trading only</dd></div></dl>
+  </header>
+  <figure class="fig"><svg viewBox="0 0 480 470" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="ar-t ar-d" style="max-width:520px;margin:0 auto">
+  <title id="ar-t">How Argus 2.0 tests a trading rule</title>
+  <desc id="ar-d">Write the rule and its pass criteria into a contract before testing. Run it on point-in-time data that refuses future information. Score it next to buy-and-hold, equal weight and cash, plus controls such as shuffled signals and coin-flip traders. Record a verdict, including rejections, in a trial log with a fixed budget. Survivors move to forward paper trading only; no real orders.</desc>
+  <defs><marker id="ar-a" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path class="dg-arrow" d="M0 0L10 5L0 10z"/></marker></defs>
+  <rect class="dg-box" x="10" y="10" width="330" height="66" rx="6"/><text class="dg-text" x="26" y="38" style="font-size:17px">1  Contract first</text><text class="dg-sub" x="26" y="60" style="font-size:14px">Rule and pass criteria, written before</text>
+  <rect class="dg-box" x="10" y="100" width="330" height="66" rx="6"/><text class="dg-text" x="26" y="128" style="font-size:17px">2  Point-in-time data</text><text class="dg-sub" x="26" y="150" style="font-size:14px">Future data refused by the code</text>
+  <rect class="dg-box" x="10" y="190" width="330" height="66" rx="6"/><text class="dg-text" x="26" y="218" style="font-size:17px">3  Baselines and controls</text><text class="dg-sub" x="26" y="240" style="font-size:14px">Buy-and-hold, shuffles, coin flips</text>
+  <rect class="dg-gate" x="10" y="280" width="330" height="66" rx="6"/><text class="dg-text" x="26" y="308" style="font-size:17px">4  Verdict logged</text><text class="dg-sub" x="26" y="330" style="font-size:14px">Rejections kept; 30-trial budget</text>
+  <rect class="dg-box-accent" x="10" y="370" width="330" height="66" rx="6"/><text class="dg-text" x="26" y="398" style="font-size:17px">5  Forward paper trading</text><text class="dg-sub" x="26" y="420" style="font-size:14px">Simulated accounts, no real orders</text>
+  <path class="dg-line" d="M175 76V98" marker-end="url(#ar-a)"/><path class="dg-line" d="M175 166V188" marker-end="url(#ar-a)"/><path class="dg-line" d="M175 256V278" marker-end="url(#ar-a)"/><path class="dg-line" d="M175 346V368" marker-end="url(#ar-a)"/>
+  <text class="dg-human" x="356" y="43" style="font-size:13px">BEFORE ANY</text><text class="dg-human" x="356" y="59" style="font-size:13px">RESULT</text>
+  <text class="dg-human" x="356" y="313" style="font-size:13px">7 REJECTED</text>
+</svg>
+<figcaption>How Argus tests a rule. Nothing moves to paper trading without passing step 4, and nothing trades real money.</figcaption></figure>
+  <div class="cs-body">
+    <nav class="toc" aria-label="On this page"><p class="toc-h">On this page</p><ol><li><a href="#what">What it does</a></li><li><a href="#why">Why I built it</a></li><li><a href="#role">My role and the AI&#x27;s role</a></li><li><a href="#approach">Approach</a></li><li><a href="#decision">Mistakes caught</a></li><li><a href="#checked">How it was checked</a></li><li><a href="#limits">Results and limits</a></li><li><a href="#demo">Safe demonstration</a></li></ol></nav>
+    <div class="prose">
+      <section class="cs-section" id="what"><h2>What it does</h2><p>Argus answers one question: does a trading rule make money after costs, compared with doing nothing clever? It runs the rule on historical data, scores it next to buying the S&amp;P 500, an equal-weight portfolio and cash, and checks it against controls built to catch luck: shuffled signals, re-runs on random subsamples, and 200 coin-flip traders per test group. Candidate rules then run forward in simulated paper accounts: as of 20 Oct, 20 candidate rules in 29 accounts (the rest are controls), heading for a first review in late December.</p></section><section class="cs-section" id="why"><h2>Why I built it</h2><p>Backtests are easy to fool. The first version of Argus (mid-2026, now archived) taught me that: 0 of 20 tradeable strategy candidates cleared a bar adjusted for how many ideas had been tried (a separate set of quality features passed a weaker ranking test). So I closed its return-prediction side rather than loosen the bar, and kept the one part that beat its baseline, a volatility model. Argus 2.0 started from scratch in September with the lesson built in: judge whole strategies by net results against baselines, with the rules fixed in advance.</p>
+<p>A reference page from August, written by Claude from the first version's code, shows the same discipline: the direction model was stamped 'unvalidated opinion' after testing at no skill across 7 million test cells, and only the volatility model was trusted.</p><figure class="fig"><img src="../../static/img/argus-v1-reference.jpg" alt="Top of a reference page titled &#x27;How Argus grades a stock&#x27;, dated 3 August 2026, explaining that the risk half uses a validated GARCH volatility model and the direction half is labelled unvalidated opinion." width="800" height="576" loading="lazy"><figcaption>The first version's process reference, 3 Aug 2026: a page Claude wrote from the code, captured from my claude.ai account on 20 Oct. Shown as an image; the page itself isn't linked.</figcaption></figure></section><section class="cs-section" id="role"><h2>My role and the AI&#x27;s role</h2><ul><li><strong>Me:</strong> the objective (I changed it on day one from forecast accuracy to net results), the scope of each test (for example, pushing a strategy test from three famous stocks to all 508 in the index), the decision to run a forward paper fleet, holding back the last two test slots, and choosing between fixes when problems surfaced.</li><li><strong>Claude Code:</strong> wrote the engine, the tests and the experiments, and runs the daily paper fleet on a schedule.</li><li><strong>Codex:</strong> wrote the build specification that Claude Code implemented, and later reviewed the documentation.</li></ul>
+<p>I didn't write the code. Live auto-trading was assessed and deliberately not built.</p></section><section class="cs-section" id="approach"><h2>Approach</h2><ul><li><strong>Contract first.</strong> A written strategy contract states each rule and its pass criteria before it runs: net profit; at least matching equal weight; profitable at double costs; profitable without its three best trades; enough trades; a drawdown limit. Changing a rule after seeing a result needs a new version and uses a new slot from a fixed budget of 30.</li><li><strong>Point-in-time data.</strong> The code refuses any data dated after the decision, and tests prove it. S&amp;P 500 membership is rebuilt for each date, company fundamentals become usable only after their SEC filing date, and reused ticker symbols are excluded.</li><li><strong>A held-back period.</strong> Data from 2024 onwards is reserved and still unused for the stock strategies.</li><li><strong>Write-once records.</strong> Every run and every paper-trading decision is hashed and chained, so later edits are detectable.</li></ul></section><section class="cs-section" id="decision"><h2>Mistakes caught</h2><ul><li><strong>Survivorship bias.</strong> The first momentum test used 65 companies that exist today and showed +168% over 2017 to 2023. Rebuilt on a universe of 580 companies that were index members at some point (410 to 476 had price data on any given date), it made +34.5%, against +85.6% for equal weight and +108% for the index. The old figure stays on file as evidence of the bias.</li><li><strong>Decisions logged too late.</strong> An audit found 41 of 75 paper-trading decisions had been logged after the market open they were meant to fill at, and only 10 were flagged. I chose the fix: derive the daily bar from 5-minute data. The contract carries a dated correction.</li><li><strong>Costs measured but not applied.</strong> Real bid-ask spreads were being reported but not charged. That was found on 18 Oct and fixed from 20 Oct.</li></ul>
+<p>Claude Code compiled a ledger of 25 dated mistakes from the project's records. Most were found by Claude's own checks, audits and daily reports, three by the compilation itself and one by a Codex review. I decided how to fix the larger ones.</p></section><section class="cs-section" id="checked"><h2>How it was checked</h2><ul><li>59 unit tests, including tests that leak future data on purpose and must be rejected (re-run 20 Oct: all pass, 3 skipped).</li><li>The headline backtests re-run from stored data by a research agent on 20 Oct, matching the recorded figures.</li><li>66 paper-trading hash chains with 446 records, 0 broken.</li><li>A number checker on AI-written analysis: the save command refuses a note whose numbers or dates don't appear in the stored company data. It caught Claude's own miscounts on 15 Oct. Its limit is that it proves a number exists in the data, not that it's used correctly.</li></ul></section><section class="cs-section" id="limits"><h2>Results and limits</h2><ul><li><strong>Results:</strong> 7 rules rejected and the baseline rule not promoted. No rule has passed. Argus doesn't pick stocks or beat the market, and makes no claim to.</li><li><strong>Paper fleet:</strong> preliminary, with no result claimed before its review dates.</li><li><strong>Known gaps:</strong> some survivorship remains (104 former members have no price history), dividends are not included, and the project isn't under version control, so 'written before the result' rests on dated records rather than commits.</li><li><strong>First version:</strong> its larger claims (58 hypotheses, over 1,100 tests) can't be confirmed from the surviving copy and aren't made here.</li></ul></section><section class="cs-section" id="demo"><h2>Safe demonstration</h2><p>Argus has a synthetic-data demo mode. It generates fake prices, runs a full backtest and verifies the record chain in about 10 seconds, with no network. Everything about my own accounts or holdings is excluded from this site.</p></section>
+      <section class="cs-section" id="credits"><h2>Tools and credits</h2><ul><li>Built with Claude Code (Anthropic) and Codex (OpenAI). Python standard library.</li><li>Prices fetched read-only through a brokerage data connector; index membership history from Wikipedia's S&amp;P 500 change log (CC BY-SA 4.0); company fundamentals from SEC EDGAR filings; interest rates from FRED.</li><li>The paper-trading workspace reuses the web interface from the first version of Argus.</li></ul></section>
+      <p class="verified muted">Status checked 20 Oct 2026. The headline backtest figures match those recorded in the project's documents and were re-run by a research agent on that date. All figures are backtests on market data fetched read-only through a brokerage data connector, plus SEC, FRED and Wikipedia sources; none involve my own money.</p>
+    </div>
+  </div>
+</article>
+</main>
+<footer class="site-footer">
+  <div class="wrap footer-inner">
+    <p><a href="mailto:adityasoni2002@gmail.com">adityasoni2002@gmail.com</a> · <a href="https://www.linkedin.com/in/adity4-soni" rel="me noopener">linkedin.com/in/adity4-soni</a> · <a href="https://github.com/adiyt4soni" rel="me noopener">github.com/adiyt4soni</a></p>
+    <p class="muted">Built with Claude Code and Codex from verified project records. Static site, no tracking. Last updated 2026-10-20.</p>
+  </div>
+</footer>
+
+</body>
+</html>
