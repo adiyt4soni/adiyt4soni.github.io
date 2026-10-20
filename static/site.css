@@ -299,3 +299,5 @@ li + li { margin-top: var(--space-1); }
 .cs-body { grid-template-columns: minmax(0, 1fr); }
 .cs-body > * { min-width: 0; }
 @media (min-width: 60rem) { .cs-body { grid-template-columns: 14rem minmax(0, 1fr); } }
+.fig-zoom { display: block; cursor: zoom-in; }
+.fig-zoom img { display: block; }
