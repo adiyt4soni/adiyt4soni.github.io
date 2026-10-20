@@ -301,3 +301,8 @@ li + li { margin-top: var(--space-1); }
 @media (min-width: 60rem) { .cs-body { grid-template-columns: 14rem minmax(0, 1fr); } }
 .fig-zoom { display: block; cursor: zoom-in; }
 .fig-zoom img { display: block; }
+
+.about-head { display: grid; gap: var(--space-5); align-items: start; }
+.about-photo { width: 7.5rem; height: auto; border-radius: var(--radius); border: 1px solid var(--line); }
+@media (min-width: 48rem) { .about-head { grid-template-columns: 9rem minmax(0, 1fr); gap: var(--space-6); } .about-photo { width: 9rem; } }
+.about-head .prose { margin-top: var(--space-4); }
