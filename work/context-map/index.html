@@ -36,7 +36,7 @@
   <section class="glance" aria-label="At a glance"><p class="glance-h">At a glance</p><dl><div><dt>Problem</dt><dd>Hundreds of rules, prompts and logs across projects, with no way to see how they connect.</dd></div><div><dt>What I did</dt><dd>Asked for it, pushed for a usable map, and accepted Claude's correction about what it could and couldn't do.</dd></div><div><dt>Result</dt><dd>1,321 files, 207 log entries and 32 open items mapped and searchable in one page.</dd></div><div><dt>Built with</dt><dd>Claude Code, Python standard library, 3d-force-graph (MIT)</dd></div></dl></section>
   <figure class="fig"><img src="../../static/img/brain-map.jpg" alt="A dark 3D network of coloured dots and lines, with a side panel showing 1,321 files, 207 log entries, 32 open items, 77 memory notes, 1,424 file links and 6 fact files, plus colour keys by type." width="800" height="520" loading="lazy"><figcaption>The map as built on 11 Oct 2026. File names only appear on hover, so none show here.</figcaption></figure>
   <div class="cs-body">
-    <nav class="toc" aria-label="On this page"><p class="toc-h">On this page</p><ol><li><a href="#what">What it is</a></li><li><a href="#decision">An honest correction</a></li></ol></nav>
+    <nav class="toc" aria-label="On this page"><p class="toc-h">On this page</p><ol><li><a href="#what"><span class="toc-n" aria-hidden="true">1</span><span class="toc-t">What it is</span></a></li><li><a href="#decision"><span class="toc-n" aria-hidden="true">2</span><span class="toc-t">An honest correction</span></a></li><li><a href="#credits"><span class="toc-n" aria-hidden="true">3</span><span class="toc-t">Tools and credits</span></a></li></ol></nav>
     <div class="prose">
       <section class="cs-section" id="what"><h2>What it is</h2><p>A Python script reads my rules files, project logs, memory notes and fact files, and writes one page: a 3D graph where every dot is a file, a log entry or an open item, coloured by type, project or age. You can search it, and clicking a dot opens it.</p></section><section class="cs-section" id="decision"><h2>An honest correction</h2><p>I first wanted it to cut the tokens AI sessions spend re-reading context. Claude pointed out that it would be a viewer, not a token saver, because sessions don't re-read every file anyway. I built it as a viewer, and its README says exactly that.</p></section>
       <section class="cs-section" id="credits"><h2>Tools and credits</h2><ul><li>Built with Claude Code (Anthropic). 3D rendering by 3d-force-graph (vasturiano, MIT licence).</li></ul></section>
@@ -51,6 +51,6 @@
     <p class="muted">Built with Claude Code and Codex from verified project records. Static site, no tracking. Last updated 2026-10-20.</p>
   </div>
 </footer>
-
+<script src="../../static/toc.js" defer></script>
 </body>
 </html>
