@@ -27,14 +27,28 @@
 <main id="main" tabindex="-1">
 
 <section class="hero wrap">
-  <p class="eyebrow">Aditya Soni · London</p>
-  <h1>I turn messy, manual work into AI systems with written rules and tests.</h1>
-  <div class="hero-text"><p>I write the rules a system must follow, direct Claude Code and Codex to build and check it, and decide what's ready to rely on. AI wrote most of the code in the projects below. The specifications, the scope calls and the decisions are mine.</p>
-<p>Before this, five years in operations, finance and growth at 64Facets, a fine-jewellery business, including a CRM migration largely automated with AI. Economics and Accounting graduate (UC Santa Barbara, 2026), based in London, looking for AI business analyst, adoption and operations roles.</p></div>
-  <p class="hero-actions">
-    <a class="btn" href="#work">See the work</a>
-    <a class="btn btn-quiet" href="about/#contact">Contact</a>
-  </p>
+  <div class="hero-grid">
+    <div class="hero-copy">
+      <figure class="epigraph"><blockquote><p>Genius is one per cent inspiration and ninety-nine per cent perspiration.</p></blockquote><figcaption>Thomas Edison (in print from 1901; he confirmed it in 1932)</figcaption></figure>
+      <h1>I build AI systems that take on the ninety-nine per cent.</h1>
+      <div class="hero-text"><p>Most working days are perspiration: screening, re-typing, checking, chasing. I turn that work into AI systems with written rules and tests, so people can spend their time on the one per cent. I write the specification, direct Claude Code and Codex to build and check it, and decide what's ready to rely on.</p>
+<p>Five years in operations, finance and growth at 64Facets, including a CRM migration automated with AI. Economics and Accounting, UC Santa Barbara (2026). Based in London.</p></div>
+      <p class="hero-actions">
+        <a class="btn" href="#work">See the work</a>
+        <a class="btn btn-quiet" href="about/#contact">Contact</a>
+      </p>
+    </div>
+    <div class="hero-shots" aria-hidden="false"><img class="shot shot-0" src="static/img/argus-v1-web.jpg" alt="Argus research terminal web app with blurred figures" width="800" height="512"><img class="shot shot-1" src="static/img/tau-dashboard.jpg" alt="Tau dashboard with recovery, strain and sleep rings" width="800" height="552"><img class="shot shot-2" src="static/img/job-board.jpg" alt="Application board with every name and figure blurred" width="800" height="520"></div>
+  </div>
+  <ul class="proof-strip"><li><a href="work/job-search-system/#what"><span class="proof-n">25,037</span><span class="proof-l">job postings screened in one sweep, 4 left for an AI to read</span></a></li><li><a href="work/job-search-system/#today"><span class="proof-n">150</span><span class="proof-l">automated tests on my own system, all passing</span></a></li><li><a href="work/vex/#checked"><span class="proof-n">94</span><span class="proof-l">completed second-model code reviews in one week</span></a></li><li><a href="skills/#automations"><span class="proof-n">180+</span><span class="proof-l">recorded runs of my scheduled automations</span></a></li></ul>
+</section>
+
+<section class="wrap section" aria-labelledby="roles-h">
+  <div class="section-head">
+    <h2 id="roles-h">Where I fit</h2>
+    <p class="muted">I'm applying for AI automation, AI operations, AI business analyst and AI enablement roles. Here's where my work already does each.</p>
+  </div>
+  <div class="roles"><article class="role-card"><h3>AI automation</h3><p class="role-need">Finds the manual work worth automating and builds workflows that run reliably.</p><ul><li>A <a href="work/job-search-system/">job-search system</a> that narrows 25,037 postings to 4 before an AI reads any of them</li><li>A <a href="work/64facets-crm/">CRM migration</a> at 64Facets automated with a local model</li><li><a href="skills/#automations">Scheduled automations</a> with their run records shown</li></ul></article><article class="role-card"><h3>AI operations</h3><p class="role-need">Keeps AI systems running safely: controls, monitoring, incidents and cost.</p><ul><li>A pre-submit gate and hash-checked records added after an <a href="work/job-search-system/#decision">audit</a> found the rules were prompt-only</li><li><a href="work/vex/#approach">Permissions enforced in code</a> and a privacy leak in a cross-model setup found and closed</li><li>Cheaper models for narrow checks and a weekly read-only scorecard of the whole system</li></ul></article><article class="role-card"><h3>AI business analyst</h3><p class="role-need">Turns a business problem into requirements, data and an honest evaluation.</p><ul><li>Mapped four business processes before bringing in AI (<a href="work/64facets-crm/#adoption">64Facets</a>)</li><li>Written rulebooks and test contracts before any build (<a href="work/argus/#approach">Argus</a>)</li><li>Evaluations against baselines, with nulls reported (<a href="work/job-search-system/#checked">job search</a>, <a href="work/tau/#checked">Tau</a>)</li></ul></article><article class="role-card"><h3>AI enablement</h3><p class="role-need">Helps a team adopt AI safely and actually use it day to day.</p><ul><li>Quick-start guides, small-group teaching and data rules for colleagues (<a href="work/64facets-crm/#adoption">64Facets</a>)</li><li>24 of my own workflows published for reuse (<a href="skills/">skills library</a>)</li><li>My working method written up step by step (<a href="how-i-work/">How I work</a>)</li></ul></article></div>
 </section>
 
 <section id="work" class="wrap section" aria-labelledby="work-h">
@@ -47,7 +61,7 @@
   <div class="feature-text">
     <p class="eyebrow">Agent workflow <span class="chip chip-status" data-status="LIVE">In use</span></p>
     <h3><a href="work/job-search-system/">Job-search and LinkedIn outreach system</a></h3>
-    <p class="lede">One system I designed and run with Claude Code for my own job search, with two halves that feed each other. The job side watches about 415 company job boards, screens roles against rules I wrote, and builds and tests a tailored CV for each. The outreach side takes those same roles, works out who to contact at each company, and runs the LinkedIn outreach automatically.</p>
+    <p class="lede">My own job search, run as one system: it screens about 415 company job boards against rules I wrote, builds a tested CV for each role that passes, and runs LinkedIn outreach for the same roles automatically.</p>
     <ul class="proof"><li>One sweep on 20 Oct 2026: 25,037 postings in, 4 sent on for an AI to read in full. Everything else was filtered by written rules</li><li>After a separate-session audit showed the rules lived only in prompts, I had them rebuilt as code with 150 automated tests</li><li>Roles that pass feed the outreach half: about 400 people contacted so far, with every note checked by a script before it sends</li></ul>
     <p class="role"><strong>My part:</strong> I wrote the rules, asked for the audit, decided what changed, and nothing is submitted until I say 'apply'. Claude Code wrote the tools; Codex wrote and reviewed some of the prompts.</p>
     <p><a class="more" href="work/job-search-system/">Read the case study<span class="vh"> on Job-search and LinkedIn outreach system</span> →</a></p>
@@ -96,7 +110,7 @@
   <div class="feature-text">
     <p class="eyebrow">Research system <span class="chip chip-status" data-status="WORKING_LOCAL">Working locally</span></p>
     <h3><a href="work/argus/">Argus 2.0</a></h3>
-    <p class="lede">A research tool for testing whether an investment idea beats doing nothing, built to catch false positives. Rules and pass marks are written down before any test, the data tool refuses to let a test see information from after the decision date, and rejections are logged as results. Simulated trading only: no real money, and no code that can place an order.</p>
+    <p class="lede">A research tool that tests whether an investment idea beats doing nothing, with rules written before each test and rejections logged as results. Simulated trading only.</p>
     <ul class="proof"><li>Rebuilding the stock universe point-in-time turned an earlier +168% backtest into +34.5%, against +108% for simply holding the index</li><li>7 rules rejected on pre-written criteria, and the first rule not promoted</li><li>The save command refuses an AI-written company note that contains a number or date not in the stored data</li></ul>
     <p class="role"><strong>My part:</strong> I set the objective and the bar, decided what to test and when to stop, and chose between fixes when problems surfaced. Claude Code built the engine and ran the tests; Codex wrote the build specification.</p>
     <p><a class="more" href="work/argus/">Read the case study<span class="vh"> on Argus 2.0</span> →</a></p>
@@ -107,7 +121,7 @@
   <div class="feature-text">
     <p class="eyebrow">Local AI assistant <span class="chip chip-status" data-status="IN_TESTING">In testing</span></p>
     <h3><a href="work/vex/">Vex</a></h3>
-    <p class="lede">A personal assistant that runs on an open-weight model on my own laptop. What it may do is decided in code, not in its prompt, so it can't send, delete or read restricted files without my approval. From 13 to 19 October every change Claude Code wrote was reviewed by Codex before I decided whether it merged.</p>
+    <p class="lede">A personal AI chief of staff on a local model: it briefs me, talks, drafts replies and acts on my Mac, with what it may do decided in code. Most of it is built; I'm testing it and fixing the last bugs.</p>
     <ul class="proof"><li>Codex flagged problems in 71 of 94 completed reviews in one week, counting re-reviews of fixes</li><li>The first review found that Claude's permission tests passed even with the permission gate switched off</li><li>A model comparison with pass marks written down beforehand ended with 'no model passes both gates; no switch'</li></ul>
     <p class="role"><strong>My part:</strong> I own the charter and the safety rules, set what gets built first, accept or veto risk, and decide every merge. Claude Code wrote nearly all the code; Codex wrote an independent first version and runs the reviews.</p>
     <p><a class="more" href="work/vex/">Read the case study<span class="vh"> on Vex</span> →</a></p>
@@ -133,7 +147,7 @@
   <div class="feature-text">
     <p class="eyebrow">Workplace AI <span class="chip chip-status" data-status="ARCHIVED">Archived</span></p>
     <h3><a href="work/64facets-crm/">CRM migration and AI adoption at 64Facets</a></h3>
-    <p class="lede">At 64Facets, a fine-jewellery business, moving 900 pieces from a custom-built CRM into a new one by hand would have taken months. I made the case, chose a local model to keep sensitive data off the cloud, and automated a substantial portion of the entry, then brought AI-assisted steps into the team's everyday work.</p>
+    <p class="lede">A 900-piece CRM migration that would have taken months by hand, mostly automated with a local model so sensitive data stayed off the cloud, followed by AI-assisted steps across four business processes.</p>
     <ul class="proof"><li>Replaced manual entry that had been taking 3 to 4 hours a day</li><li>A locally run 70-billion-parameter model did most of the entry, so sensitive data stayed off the cloud</li><li>AI-assisted steps introduced across four business processes; the CEO agreed they saved time</li></ul>
     <p class="role"><strong>My part:</strong> I spotted the problem, made the business case to the CEO, chose the approach, checked the output, and taught colleagues. Claude and Codex helped build the automation.</p>
     <p><a class="more" href="work/64facets-crm/">Read the case study<span class="vh"> on CRM migration and AI adoption at 64Facets</span> →</a></p>
@@ -159,13 +173,21 @@
   <div class="feature-text">
     <p class="eyebrow">Personal data analytics <span class="chip chip-status" data-status="WORKING_LOCAL">Working locally</span></p>
     <h3><a href="work/tau/">Tau</a></h3>
-    <p class="lede">A personal analytics app over my WHOOP wearable data. A scheduled pull feeds a rebuild that is checked by 21 validation tests, and the analysis only reports patterns that hold up after a check for chance. The screenshot shows my real dashboard; medical details are kept off this site.</p>
+    <p class="lede">Personal analytics over my WHOOP data: a scheduled pull, 21 validation checks on every rebuild, and only patterns that survive a check for chance.</p>
     <ul class="proof"><li>Checking real data against a frozen reference caught a unit bug and a 12.5-hour timezone error that a synthetic test had missed</li><li>0 of 25 tested habits held up after a check for chance, and the app says so instead of offering tips</li><li>The forecast is graded against a naive baseline and labels its own confidence</li></ul>
     <p class="role"><strong>My part:</strong> I set the rules (no medical advice, nothing leaves the folder, check the output not the code), made the product calls and pushed back on the interface. Claude Code wrote and rebuilt the code and found both data bugs.</p>
     <p><a class="more" href="work/tau/">Read the case study<span class="vh"> on Tau</span> →</a></p>
   </div>
   <div class="feature-media"><figure class="fig"><img src="static/img/tau-dashboard.jpg" alt="Tau dashboard in dark mode: a greeting, two reminder cards about training and weight logging, a daily streak panel, and three rings for recovery (68%), strain (11.2) and sleep (82%) with their sub-metrics." width="800" height="552" loading="lazy"><figcaption>My real Tau dashboard, 20 Oct 2026, captured from the local app. Two reminder cards with medical details were hidden before the capture; nothing else was edited.</figcaption></figure></div>
 </article>
+</section>
+
+<section class="wrap section" aria-labelledby="more-h">
+  <div class="section-head">
+    <h2 id="more-h">More case studies</h2>
+    <p class="muted">Shorter write-ups of other things I've built.</p>
+  </div>
+  <ul class="more-cases"><li><a href="work/neeru-soni-homepage/"><span class="mc-kind">AI-built website</span><span class="mc-name">Homepage for Neeru Soni</span></a></li><li><a href="work/london-rental-search/"><span class="mc-kind">Agent workflow</span><span class="mc-name">London rental search</span></a></li><li><a href="work/ai-sales-development-plan/"><span class="mc-kind">Interview task</span><span class="mc-name">AI plan for a sales-development team</span></a></li><li><a href="work/context-map/"><span class="mc-kind">Knowledge workflow</span><span class="mc-name">Context map (&#x27;brain&#x27;)</span></a></li></ul>
 </section>
 
 <section class="wrap section" aria-labelledby="method-h">
@@ -176,18 +198,11 @@
   <ol class="method"><li><span class="step-name">Define the problem</span><span class="step-text">Write down what the system must do and what it must never do, before any code.</span></li><li><span class="step-name">Set constraints</span><span class="step-text">Privacy, cost and approval rules go into code where they can be tested, not into a prompt.</span></li><li><span class="step-name">Choose tools</span><span class="step-text">Pick the model, library or existing skill that fits, and record why.</span></li><li><span class="step-name">Delegate</span><span class="step-text">Hand a written specification to Claude Code; keep each task small enough to review.</span></li><li><span class="step-name">Review</span><span class="step-text">A second model (Codex) reviews the change read-only; I decide which findings to act on.</span></li><li><span class="step-name">Test against evidence</span><span class="step-text">Pre-registered checks, baselines and spot-checks against the source data.</span></li><li><span class="step-name">Correct</span><span class="step-text">When a check fails, fix the cause and add a check so it can't recur.</span></li><li><span class="step-name">Accept or stop</span><span class="step-text">Ship what passed; report nulls and stop what didn't earn its place.</span></li></ol>
 </section>
 
-<section class="wrap section" aria-labelledby="caps-h">
-  <div class="section-head">
-    <h2 id="caps-h">What I can bring to a team</h2>
-    <p class="muted">Each line points to where the work shows it.</p>
-  </div>
-  <table class="caps"><tbody><tr><th scope="row">Requirements discovery</th><td>Written rulebooks and contracts before any build: the <a href="work/job-search-system/#approach">job-search rules</a>, Argus's <a href="work/argus/#approach">strategy contract</a>, the Vex charter.</td></tr><tr><th scope="row">Workflow design</th><td>A rules-first <a href="work/job-search-system/#what">screening funnel</a> and a <a href="work/tau/#what">daily data pipeline</a> with validation built in.</td></tr><tr><th scope="row">Tool and model selection</th><td>A pre-registered <a href="work/vex/#checked">local-model bake-off</a>; third-party <a href="skills/">skills reused with credit</a>.</td></tr><tr><th scope="row">Evaluation and QA</th><td>Baselines and controls in <a href="work/argus/#checked">Argus</a>, a 21-check harness in <a href="work/tau/#checked">Tau</a>, a <a href="work/job-search-system/#decision">separate-session audit</a> of my own system.</td></tr><tr><th scope="row">AI safety and privacy controls</th><td><a href="work/vex/#approach">Permissions in code</a> with injection tests, and a <a href="archive/">privacy leak found and closed</a> in a cross-model setup.</td></tr><tr><th scope="row">Operational reliability</th><td><a href="skills/#automations">Scheduled automations</a> with run records, pre-submit gates and hash-verified records.</td></tr><tr><th scope="row">Communicating limits</th><td>Every case study ends with what doesn't work, and the <a href="archive/">archive</a> keeps stopped work.</td></tr></tbody></table>
-</section>
 
 <section class="wrap section split" aria-label="More work">
   <div class="panel">
     <h2>Archive</h2>
-    <p>26 entries, including experiments and stopped work, each with its status and date.</p>
+    <p>27 entries, including experiments and stopped work, each with its status and date.</p>
     <p><a class="more" href="archive/">Browse the archive →</a></p>
   </div>
   <div class="panel">

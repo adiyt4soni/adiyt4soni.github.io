@@ -108,7 +108,7 @@ li + li { margin-top: var(--space-1); }
 .lede { font-size: var(--step-1); color: var(--ink-2); max-width: var(--measure); }
 .chip { display: inline-block; font: 500 0.78rem/1.4 var(--font-sans); padding: 0.1rem 0.5rem; border-radius: 99px; border: 1px solid var(--line); background: var(--surface); color: var(--ink-2); white-space: nowrap; }
 .chip-status::before { content: ""; display: inline-block; width: 0.5rem; height: 0.5rem; border-radius: 50%; margin-right: 0.35rem; vertical-align: 0.05em; background: var(--muted); }
-.chip-status[data-status="LIVE"]::before, .chip-status[data-status="WORKING_LOCAL"]::before { background: var(--ok); }
+.chip-status[data-status="LIVE"]::before, .chip-status[data-status="WORKING_LOCAL"]::before, .chip-status[data-status="BUILT"]::before { background: var(--ok); }
 .chip-status[data-status="IN_TESTING"]::before, .chip-status[data-status="PROTOTYPE"]::before { background: var(--warn); }
 .chip-status[data-status="ARCHIVED"]::before, .chip-status[data-status="DISCONTINUED"]::before { background: var(--stop); }
 .btn { display: inline-block; background: var(--accent); color: var(--accent-ink); padding: 0.6rem 1.1rem; border-radius: var(--radius); text-decoration: none; font-weight: 600; border: 1px solid var(--accent); }
@@ -220,3 +220,51 @@ li + li { margin-top: var(--space-1); }
 @media (prefers-reduced-motion: no-preference) { html { scroll-behavior: smooth; } }
 @media print { .site-header nav, .filters, .toc, .hero-actions { display: none; } body { background: #fff; color: #000; } }
 .draft-banner { background: #fff3cd; color: #3d2e00; border-bottom: 1px solid #e0c46c; padding: var(--space-2) var(--gutter); font-size: var(--step--1); text-align: center; }
+
+/* --- v2: hero collage, proof strip, roles, glance, galleries, step cards --- */
+.hero { padding-top: var(--space-7); }
+.hero-grid { display: grid; gap: var(--space-6); align-items: center; }
+@media (min-width: 64rem) { .hero-grid { grid-template-columns: minmax(0, 6fr) minmax(0, 5fr); gap: var(--space-7); } }
+.epigraph { margin: 0 0 var(--space-5); padding-left: var(--space-4); border-left: 3px solid var(--accent); max-width: 34rem; }
+.epigraph blockquote { margin: 0; }
+.epigraph p { font-family: var(--font-serif); font-style: italic; font-size: var(--step-1); color: var(--ink-2); margin: 0 0 var(--space-1); }
+.epigraph figcaption { font-size: var(--step--1); color: var(--muted); }
+.hero-shots { position: relative; aspect-ratio: 5 / 4; min-height: 16rem; }
+.shot { position: absolute; width: 74%; height: auto; border-radius: var(--radius); border: 1px solid var(--line); box-shadow: 0 10px 30px rgb(0 0 0 / 0.18); background: var(--surface); }
+.shot-0 { top: 0; left: 0; z-index: 1; }
+.shot-1 { top: 22%; right: 0; z-index: 2; }
+.shot-2 { bottom: 0; left: 12%; z-index: 3; width: 62%; }
+@media (max-width: 40rem) { .hero-shots { aspect-ratio: 4 / 3; } }
+.proof-strip { list-style: none; padding: 0; margin: var(--space-7) 0 0; display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: var(--space-3); }
+@media (min-width: 60rem) { .proof-strip { grid-template-columns: repeat(4, minmax(0, 1fr)); } }
+.proof-strip li { margin: 0; }
+.proof-strip a { display: block; height: 100%; padding: var(--space-4); background: var(--surface); border: 1px solid var(--line); border-radius: var(--radius); text-decoration: none; color: var(--ink); }
+.proof-strip a:hover { border-color: var(--accent); }
+.proof-n { display: block; font-family: var(--font-serif); font-size: var(--step-3); font-weight: 600; color: var(--accent); line-height: 1.1; }
+.proof-l { display: block; font-size: var(--step--1); color: var(--ink-2); margin-top: var(--space-1); }
+.roles { display: grid; gap: var(--space-4); }
+@media (min-width: 48rem) { .roles { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+.role-card { background: var(--surface); border: 1px solid var(--line); border-top: 3px solid var(--accent); border-radius: var(--radius); padding: var(--space-5); }
+.role-card h3 { font-size: var(--step-1); font-family: var(--font-sans); margin-bottom: var(--space-2); }
+.role-need { color: var(--muted); font-size: var(--step--1); }
+.role-card ul { margin-bottom: 0; }
+.glance { background: var(--accent-soft); border-radius: var(--radius); padding: var(--space-5); margin: 0 0 var(--space-6); }
+.glance-h { font-weight: 700; font-size: var(--step--1); text-transform: uppercase; letter-spacing: 0.08em; color: var(--accent); margin-bottom: var(--space-3); }
+.glance dl { display: grid; gap: var(--space-4); margin: 0; }
+@media (min-width: 48rem) { .glance dl { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+.glance dt { font-weight: 700; margin-bottom: var(--space-1); }
+.glance dd { margin: 0; color: var(--ink-2); }
+.gallery { display: grid; gap: var(--space-4); margin: var(--space-5) 0; }
+.gallery .fig { margin: 0; }
+/* numbered lists inside case studies become step cards */
+.prose ol { list-style: none; padding: 0; counter-reset: s; display: grid; gap: var(--space-3); }
+.prose ol > li { counter-increment: s; position: relative; margin: 0; padding: var(--space-3) var(--space-4) var(--space-3) 3.25rem; background: var(--surface); border: 1px solid var(--line); border-radius: var(--radius); }
+.prose ol > li::before { content: counter(s); position: absolute; left: var(--space-3); top: var(--space-3); width: 1.75rem; height: 1.75rem; border-radius: 50%; background: var(--accent); color: var(--accent-ink); font: 700 0.85rem/1.75rem var(--font-sans); text-align: center; }
+
+.more-cases { list-style: none; padding: 0; display: grid; gap: var(--space-3); }
+@media (min-width: 48rem) { .more-cases { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+.more-cases li { margin: 0; }
+.more-cases a { display: block; padding: var(--space-4); background: var(--surface); border: 1px solid var(--line); border-radius: var(--radius); text-decoration: none; color: var(--ink); }
+.more-cases a:hover { border-color: var(--accent); }
+.mc-kind { display: block; font-size: var(--step--1); color: var(--muted); }
+.mc-name { display: block; font-weight: 600; margin-top: var(--space-1); }
