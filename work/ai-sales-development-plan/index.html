@@ -4,11 +4,11 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>AI plan for a sales-development team · Aditya Soni</title>
-<meta name="description" content="Case study: an AI-for-sales-development interview task with two working demos, a pre-registered backtest and a 14-lens skeptical audit.">
+<meta name="description" content="Case study: an AI-for-sales-development interview task with two working demos, a pre-registered backtest and a 14-lens sceptical audit.">
 <link rel="canonical" href="https://adiyt4soni.github.io/work/ai-sales-development-plan/">
 <meta property="og:type" content="website">
 <meta property="og:title" content="AI plan for a sales-development team · Aditya Soni">
-<meta property="og:description" content="Case study: an AI-for-sales-development interview task with two working demos, a pre-registered backtest and a 14-lens skeptical audit.">
+<meta property="og:description" content="Case study: an AI-for-sales-development interview task with two working demos, a pre-registered backtest and a 14-lens sceptical audit.">
 <meta property="og:url" content="https://adiyt4soni.github.io/work/ai-sales-development-plan/">
 <meta property="og:image" content="https://adiyt4soni.github.io/static/img/og-card.jpg">
 <meta property="og:image:width" content="1200">
@@ -17,7 +17,7 @@
 <meta name="twitter:card" content="summary_large_image">
 <meta name="color-scheme" content="light dark">
 <link rel="icon" href="../../static/favicon.svg" type="image/svg+xml">
-<link rel="stylesheet" href="../../static/site.css">
+<link rel="stylesheet" href="../../static/site.css?v=33d3845f">
 
 </head>
 <body>
@@ -32,9 +32,9 @@
 
 <article class="wrap cs">
   <header class="cs-head">
-    <p class="eyebrow"><a href="../../#work">Selected work</a> / Interview task</p>
+    <p class="eyebrow"><a href="../../#work">Work</a> / Interview task</p>
     <h1>AI plan for a sales-development team</h1>
-    <p class="lede">For a job interview at a B2B software company, I was set a task on using AI in sales development. Rather than write a slide deck, I had two working demos built, tested the research behind the plan, and put the whole pack through a skeptical audit before I submitted it. The company and its materials stay unnamed here.</p>
+    <p class="lede">For a job interview at a B2B software company, I was set a task on using AI in sales development. Rather than write a slide deck, I had two working demos built, tested the research behind the plan, and put the whole pack through a sceptical audit before I submitted it. The company and its materials stay unnamed here.</p>
     <dl class="facts"><div><dt>My role</dt><dd>Scope, approach, audits, final cut</dd></div><div><dt>Built with</dt><dd>Claude Code, Codex, ChatGPT</dd></div><div><dt>Period</dt><dd>Oct 2026</dd></div><div><dt>Status</dt><dd>Submitted for the interview</dd></div></dl>
   </header>
   <section class="glance" aria-label="At a glance"><p class="glance-h">At a glance</p><dl><div><dt>Problem</dt><dd>Show, in a few days, how AI could make a sales-development team faster without making things up.</dd></div><div><dt>What I did</dt><dd>Set the scope, chose to build working demos, commissioned the audits and decided what to cut.</dd></div><div><dt>Result</dt><dd>Two demos with automatic checks, an honest inconclusive backtest, and 154 audit findings worked through.</dd></div><div><dt>Built with</dt><dd>Claude Code, Codex, ChatGPT (review), Python</dd></div></dl></section>
@@ -43,7 +43,7 @@
     <nav class="toc" aria-label="On this page"><p class="toc-h">On this page</p><ol><li><a href="#what"><span class="toc-n" aria-hidden="true">1</span><span class="toc-t">What it does</span></a></li><li><a href="#why"><span class="toc-n" aria-hidden="true">2</span><span class="toc-t">Why I built it</span></a></li><li><a href="#role"><span class="toc-n" aria-hidden="true">3</span><span class="toc-t">My role and the AI&#x27;s role</span></a></li><li><a href="#how"><span class="toc-n" aria-hidden="true">4</span><span class="toc-t">How it works</span></a></li><li><a href="#caught"><span class="toc-n" aria-hidden="true">5</span><span class="toc-t">What I caught and changed</span></a></li><li><a href="#checked"><span class="toc-n" aria-hidden="true">6</span><span class="toc-t">How it was checked</span></a></li><li><a href="#now"><span class="toc-n" aria-hidden="true">7</span><span class="toc-t">Where it is now</span></a></li><li><a href="#credits"><span class="toc-n" aria-hidden="true">8</span><span class="toc-t">Tools and credits</span></a></li></ol></nav>
     <div class="prose">
       <section class="cs-section" id="what"><h2>What it does</h2><p>A complete AI plan for a sales-development team, delivered as a pack with two working demos, written for an interview task at a B2B software company.</p></section><section class="cs-section" id="why"><h2>Why I built it</h2><p>The task asked how AI could help a sales-development team. Working demos with automatic checks show that better than slides, and testing the research first meant the plan didn't rest on an untested idea.</p></section><section class="cs-section" id="role"><h2>My role and the AI&#x27;s role</h2><ul><li><strong>Me:</strong> the scope, the choice to build working demos, commissioning the audits, and deciding what to cut.</li><li><strong>Claude Code and Codex:</strong> built the demos, ran the research and the audits.</li><li><strong>ChatGPT:</strong> prepared one version of the pack, which was then reviewed.</li></ul></section><section class="cs-section" id="how"><h2>How it works</h2><ol><li><strong>Account brief.</strong> Reads the public company register for a target company and builds a one-page brief. Before any network call it refuses a company that's already a customer, and it refuses dissolved, dormant or inexact matches. A checker fails any brief whose fact has no source and date, or whose number doesn't appear in a cited fact.</li><li><strong>Call to handover.</strong> Turns a discovery-call transcript into CRM fields that each quote their evidence, a check against the team's qualification bar, and a handover note for the account executive. A checker requires every quote to appear word for word in the call and every number to have been said on it. The test call was fictional, with deliberate traps, and five more scripted calls were keyed by a separate AI agent.</li></ol>
-<p>Both demos are published as skills: <a href="https://github.com/adiyt4soni/account-brief" rel="noopener">account-brief</a> and <a href="https://github.com/adiyt4soni/call-handover" rel="noopener">call-handover</a>.</p></section><section class="cs-section" id="caught"><h2>What I caught and changed</h2><ul><li><strong>A 14-lens skeptical audit.</strong> Each finding was re-checked by a second agent told to try to refute it. Of 154 findings, none was refuted: 58 were confirmed and 96 partly true, ranked 9 critical, 52 major and 93 minor.</li><li><strong>A second round on the final pack</strong> found 81 issues (26 wrong, 55 overstated) and no wrong numbers.</li><li><strong>A cross-model check.</strong> When ChatGPT prepared a version of the pack, a review caught two lines that overstated their sources.</li></ul></section><section class="cs-section" id="checked"><h2>How it was checked</h2><p>I had the plan's key idea tested before relying on it: a pre-registered backtest of whether public signals came before a purchase. It was inconclusive. With 4 datable buyers, the smallest p-value was 0.49, the power was about 5 to 11%, and about 31 buyers and 83 comparison companies would be needed for a fair test. The pack says that plainly, and dated predictions were written down before their outcomes are known.</p></section><section class="cs-section" id="now"><h2>Where it is now</h2><p>Submitted for the interview. The company and its materials stay unnamed here.</p>
+<p>Both demos are published as skills: <a href="https://github.com/adiyt4soni/account-brief" rel="noopener">account-brief</a> and <a href="https://github.com/adiyt4soni/call-handover" rel="noopener">call-handover</a>.</p></section><section class="cs-section" id="caught"><h2>What I caught and changed</h2><ul><li><strong>A 14-lens sceptical audit.</strong> Each finding was re-checked by a second agent told to try to refute it. Of 154 findings, none was refuted: 58 were confirmed and 96 partly true, ranked 9 critical, 52 major and 93 minor.</li><li><strong>A second round on the final pack</strong> found 81 issues (26 wrong, 55 overstated) and no wrong numbers.</li><li><strong>A cross-model check.</strong> When ChatGPT prepared a version of the pack, a review caught two lines that overstated their sources.</li></ul></section><section class="cs-section" id="checked"><h2>How it was checked</h2><p>I had the plan's key idea tested before relying on it: a pre-registered backtest of whether public signals came before a purchase. It was inconclusive. With 4 datable buyers, the smallest p-value was 0.49, the power was about 5 to 11%, and about 31 buyers and 83 comparison companies would be needed for a fair test. The pack says that plainly, and dated predictions have been written down before their outcomes are known.</p></section><section class="cs-section" id="now"><h2>Where it is now</h2><p>Submitted for the interview. The company and its materials stay unnamed here.</p>
 <h3>Limits</h3>
 <ul><li>The demos' answer keys were written in the same session as the demos, and the checker doesn't test whether a quote actually supports its field.</li><li>As of 16 Oct, nobody had run either demo end to end in a live setting.</li><li>The interview outcome isn't recorded here.</li></ul></section>
       <section class="cs-section" id="credits"><h2>Tools and credits</h2><ul><li>Built with Claude Code (Anthropic) and Codex (OpenAI); one review pass with ChatGPT.</li><li>Public data: the UK company register (Companies House).</li></ul></section>
@@ -55,9 +55,9 @@
 <footer class="site-footer">
   <div class="wrap footer-inner">
     <p><a href="mailto:adityasoni2002@gmail.com">adityasoni2002@gmail.com</a> · <a href="https://www.linkedin.com/in/adity4-soni" rel="me noopener">linkedin.com/in/adity4-soni</a> · <a href="https://github.com/adiyt4soni" rel="me noopener">github.com/adiyt4soni</a></p>
-    <p class="muted">Built with Claude Code and Codex from verified project records. Static site, no tracking. Last updated 2026-10-20.</p>
+    <p class="muted">Built with Claude Code and Codex from verified project records. Static site, no tracking. Last updated 2026-10-22.</p>
   </div>
 </footer>
-<script src="../../static/toc.js" defer></script>
+<script src="../../static/toc.js?v=dc5bab3d" defer></script>
 </body>
 </html>

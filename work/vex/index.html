@@ -17,7 +17,7 @@
 <meta name="twitter:card" content="summary_large_image">
 <meta name="color-scheme" content="light dark">
 <link rel="icon" href="../../static/favicon.svg" type="image/svg+xml">
-<link rel="stylesheet" href="../../static/site.css">
+<link rel="stylesheet" href="../../static/site.css?v=33d3845f">
 
 </head>
 <body>
@@ -32,7 +32,7 @@
 
 <article class="wrap cs">
   <header class="cs-head">
-    <p class="eyebrow"><a href="../../#work">Selected work</a> / Local AI assistant</p>
+    <p class="eyebrow"><a href="../../#work">Work</a> / Local AI assistant</p>
     <h1>Vex</h1>
     <p class="lede">My goal for Vex is a personal AI chief of staff: an assistant I can talk to naturally, that knows my context, hands work to specialist AI agents, checks what they did and reports back, all on my own laptop. Most of it is built. I'm now testing it on my own data and fixing the last bugs.</p>
     <dl class="facts"><div><dt>My role</dt><dd>Vision, charter, safety rules, release gate</dd></div><div><dt>Built with</dt><dd>Claude Code, Codex, gpt-oss 20B via Ollama</dd></div><div><dt>Period</dt><dd>Sep 2026 to now</dd></div><div><dt>Status</dt><dd>Nearly finished; in testing</dd></div></dl>
@@ -57,7 +57,7 @@
   <div class="cs-body">
     <nav class="toc" aria-label="On this page"><p class="toc-h">On this page</p><ol><li><a href="#what"><span class="toc-n" aria-hidden="true">1</span><span class="toc-t">What it does</span></a></li><li><a href="#why"><span class="toc-n" aria-hidden="true">2</span><span class="toc-t">Why I built it</span></a></li><li><a href="#role"><span class="toc-n" aria-hidden="true">3</span><span class="toc-t">My role and the AI&#x27;s role</span></a></li><li><a href="#how"><span class="toc-n" aria-hidden="true">4</span><span class="toc-t">How it works</span></a></li><li><a href="#caught"><span class="toc-n" aria-hidden="true">5</span><span class="toc-t">What I caught and changed</span></a></li><li><a href="#checked"><span class="toc-n" aria-hidden="true">6</span><span class="toc-t">How it was checked</span></a></li><li><a href="#now"><span class="toc-n" aria-hidden="true">7</span><span class="toc-t">Where it is now</span></a></li><li><a href="#credits"><span class="toc-n" aria-hidden="true">8</span><span class="toc-t">Tools and credits</span></a></li></ol></nav>
     <div class="prose">
-      <section class="cs-section" id="what"><h2>What it does</h2><p>Most of that list already exists as tested code:</p>
+      <section class="cs-section" id="what"><h2>What it does</h2><p>Most of the goals listed under 'Why I built it' already exist as tested code:</p>
 <ul><li><strong>Daily briefing</strong> from the calendars I've authorised, built without a model so it can't make anything up.</li><li><strong>Chat</strong> that keeps conversations for 30 days, on a model running on my own machine.</li><li><strong>Voice:</strong> on-device speech recognition and a local voice that runs in a sandboxed process with no network.</li><li><strong>Mac actions:</strong> open or hide an app, show a file, set the volume. Quitting apps and opening links are deliberately excluded.</li><li><strong>Google:</strong> reads Gmail, Drive, Docs and Sheets and creates email drafts. Sending is blocked in code: the only Gmail action it may take is creating a draft.</li><li><strong>Lookups:</strong> weather and London journeys, opt-in.</li><li><strong>Encrypted backups</strong> with a tested restore.</li></ul>
 <p>Also built: <strong>answers from my notes and documents</strong> (citing the note and date, keyword search by design), <strong>memory</strong>, and an <strong>approval queue</strong> for calendar and reminder changes. Those three stay switched off until their reviews pass.</p>
 <p>The foundation is merged. The rest is in a frozen release candidate of about 20,000 lines with about 1,760 tests, which I'm testing on my own data now. Still to come from the goal list: the wake word, screen control as a fallback, file organising, photo search, delegation to other agents, and approved email sending.</p></section><section class="cs-section" id="why"><h2>Why I built it</h2><p>I want Vex to be a calm, capable chief of staff in the spirit of JARVIS. I want to be able to talk to it like a person, and for it to:</p>
@@ -78,9 +78,9 @@
 <footer class="site-footer">
   <div class="wrap footer-inner">
     <p><a href="mailto:adityasoni2002@gmail.com">adityasoni2002@gmail.com</a> · <a href="https://www.linkedin.com/in/adity4-soni" rel="me noopener">linkedin.com/in/adity4-soni</a> · <a href="https://github.com/adiyt4soni" rel="me noopener">github.com/adiyt4soni</a></p>
-    <p class="muted">Built with Claude Code and Codex from verified project records. Static site, no tracking. Last updated 2026-10-20.</p>
+    <p class="muted">Built with Claude Code and Codex from verified project records. Static site, no tracking. Last updated 2026-10-22.</p>
   </div>
 </footer>
-<script src="../../static/toc.js" defer></script>
+<script src="../../static/toc.js?v=dc5bab3d" defer></script>
 </body>
 </html>
