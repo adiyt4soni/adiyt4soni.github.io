@@ -4,11 +4,11 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>London rental search · Aditya Soni</title>
-<meta name="description" content="Case study: an AI-built London rental search with commute and area data, AI photo review against a rubric, and human approval of every message.">
+<meta name="description" content="Project: an AI-built London rental search with commute and area data, AI photo review against a rubric, and human approval of every message.">
 <link rel="canonical" href="https://adiyt4soni.github.io/work/london-rental-search/">
 <meta property="og:type" content="website">
 <meta property="og:title" content="London rental search · Aditya Soni">
-<meta property="og:description" content="Case study: an AI-built London rental search with commute and area data, AI photo review against a rubric, and human approval of every message.">
+<meta property="og:description" content="Project: an AI-built London rental search with commute and area data, AI photo review against a rubric, and human approval of every message.">
 <meta property="og:url" content="https://adiyt4soni.github.io/work/london-rental-search/">
 <meta property="og:image" content="https://adiyt4soni.github.io/static/img/og-card.jpg">
 <meta property="og:image:width" content="1200">
@@ -17,7 +17,7 @@
 <meta name="twitter:card" content="summary_large_image">
 <meta name="color-scheme" content="light dark">
 <link rel="icon" href="../../static/favicon.svg" type="image/svg+xml">
-<link rel="stylesheet" href="../../static/site.css?v=33d3845f">
+<link rel="stylesheet" href="../../static/site.css?v=58913c84">
 
 </head>
 <body>
@@ -37,7 +37,7 @@
     <p class="lede">Moving to London from abroad, I needed a room near the City without viewing dozens in person. I had Claude build a search system that collects listings, checks commute times and area data from public sources, has AI agents review every listing's photos against a written rubric, and ranks what's left. I chose from a shortlist and approved every message.</p>
     <dl class="facts"><div><dt>My role</dt><dd>Requirements, rules, choices, approvals</dd></div><div><dt>Built with</dt><dd>Claude Code, Python, open data</dd></div><div><dt>Period</dt><dd>Oct 2026</dd></div><div><dt>Status</dt><dd>Paused after a first-month booking</dd></div></dl>
   </header>
-  <section class="glance" aria-label="At a glance"><p class="glance-h">At a glance</p><dl><div><dt>Problem</dt><dd>Hundreds of rental ads, viewed from abroad, with no way to judge rooms or areas in person.</dd></div><div><dt>What I did</dt><dd>Defined the requirements in a ten-round interview, set the rules, picked from the shortlist and approved every message.</dd></div><div><dt>Result</dt><dd>About 930 listing reviews covering about 7,500 photos; a ranked shortlist; a first-month room booked.</dd></div><div><dt>Built with</dt><dd>Claude Code, Python standard library, TfL, police and census open data</dd></div></dl></section>
+  <section class="glance" aria-label="At a glance"><p class="glance-h">At a glance</p><p class="glance-lead">A sourcing and due-diligence problem: too many options and no way to inspect them in person.</p><dl><div><dt>Problem</dt><dd>Hundreds of London rental ads, viewed from abroad, with no way to see rooms or areas in person.</dd></div><div><dt>What I did</dt><dd>Defined the requirements, set the scoring rules, chose from the shortlist and approved every message sent.</dd></div><div><dt>Result</dt><dd>About 930 listings reviewed across about 7,500 photos, a ranked shortlist, and a room booked.</dd></div><div><dt>Built with</dt><dd>Claude Code, Python standard library, TfL, police and census open data</dd></div></dl></section>
   <figure class="fig"><a class="fig-zoom" href="../../static/img/room-hunt-4k.jpg" title="Open the full-size image"><img src="../../static/img/room-hunt.jpg" alt="The room-hunt board: search totals (14 areas, 501 ads, 60 rooms photo-reviewed, 8 passing every test), tabs for flats, all rooms and hotels, and a ranked listing card, with listing details, prices and photos blurred." width="1920" height="1248" loading="lazy"></a><figcaption>The shortlist board the system rebuilt after each search, 15 Oct 2026. Listing details, prices, photos and my booking are blurred or removed: they're third-party ads and my home address.</figcaption></figure>
   <div class="cs-body">
     <nav class="toc" aria-label="On this page"><p class="toc-h">On this page</p><ol><li><a href="#what"><span class="toc-n" aria-hidden="true">1</span><span class="toc-t">What it does</span></a></li><li><a href="#why"><span class="toc-n" aria-hidden="true">2</span><span class="toc-t">Why I built it</span></a></li><li><a href="#role"><span class="toc-n" aria-hidden="true">3</span><span class="toc-t">My role and the AI&#x27;s role</span></a></li><li><a href="#how"><span class="toc-n" aria-hidden="true">4</span><span class="toc-t">How it works</span></a></li><li><a href="#caught"><span class="toc-n" aria-hidden="true">5</span><span class="toc-t">What I caught and changed</span></a></li><li><a href="#checked"><span class="toc-n" aria-hidden="true">6</span><span class="toc-t">How it was checked</span></a></li><li><a href="#now"><span class="toc-n" aria-hidden="true">7</span><span class="toc-t">Where it is now</span></a></li><li><a href="#credits"><span class="toc-n" aria-hidden="true">8</span><span class="toc-t">Tools and credits</span></a></li></ol></nav>
